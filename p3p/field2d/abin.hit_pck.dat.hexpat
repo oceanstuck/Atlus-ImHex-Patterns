@@ -1,17 +1,14 @@
 #pragma author moddaman
 #pragma endian little
 
-/* 
-    TODO: Document what the unknown icons actually are,
-    since ImHex seems to shows the value as {enumname}::??? when
-    there isn't a corresponding entry, as opposed to the raw
-    value like 010 does.
-*/
+// Pulling icon names from the init.bin/bgpanel/bgPanel.bin/icon_*.spr files,
+// appending hex value in cases where two values share the same icon
 enum icons : u8 {
-    AreaTransition = 8,
-    SavePoint = 56,
-    Unknown18 = 24,
-    Unknown48 = 72
+    Move02_08 = 0x08, // Left and Right arrows above and below one another respectively
+    Move02_18 = 0x18,
+    Move03 = 0x28, // Door
+    Save = 0x38,
+    Exclamation = 0x48
 };
 
 struct fldObject {
@@ -21,7 +18,7 @@ struct fldObject {
     u16 Field04 [[color("FFFF00")]];
     u16 Field06 [[color("FF0000"), comment("Appears to always be 0xE803?")]];
     u32 ProcedureIndex [[color("00FF00"), comment("Index of Flowscript procedure to call when Object is interacted with.")]];
-    u32 Field0C [[color("FFFF00")]];
+    u32 ShowOnFlag [[color("FFFF00"), comment("Shows if bitflag is enabled")]];
 };
 
 struct pckDAT {
