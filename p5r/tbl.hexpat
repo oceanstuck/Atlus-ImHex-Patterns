@@ -1,10 +1,11 @@
 #pragma author SecreC.
-#pragma description Reads P5 ftd/ctd/mtd/ttd files, taken from the 010 template repo https://github.com/tge-was-taken/010-Editor-Templates
+#pragma description Reads P5 tbl files, taken from the 010 template repo https://github.com/tge-was-taken/010-Editor-Templates
 #pragma endian big
 
 // Imhex includes
 #include <std/io.pat>
 #include <std/mem.pat>
+#include <std/core.pat>
 #include <std/string.pat>
 #include <hex/provider.pat>
 

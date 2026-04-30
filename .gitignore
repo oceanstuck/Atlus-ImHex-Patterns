@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/VSWorkspaceState.json
+/.vs/Atlus-ImHex-Patterns/v17
+/.vs/Atlus-ImHex-Patterns/FileContentIndex
+/.vs/Atlus-ImHex-Patterns/CopilotIndices/17.14.1661.41761
+/.vs

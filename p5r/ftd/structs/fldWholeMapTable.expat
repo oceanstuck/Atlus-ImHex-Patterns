@@ -1,0 +1,10 @@
+struct FastTravelOption {
+	char placeName[40];
+	u16 fldMajor, fldMinor;
+	u16 unknowns[6];
+};
+
+struct fldWholeMapTable {
+	FastTravelOption fastTravelOptions[20];
+	padding[4];
+};

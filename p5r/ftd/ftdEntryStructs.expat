@@ -17,6 +17,7 @@
 #include <atlus/p5r/ftd/structs/fldPlayerSpeed.expat>
 #include <atlus/p5r/ftd/structs/fldLmapStation.expat>
 #include <atlus/p5r/ftd/structs/fldLmapFare.expat>
+#include <atlus/p5r/ftd/structs/fldWholeMapTable.expat>
 
 str fileName = hex::prv::get_information("file_name");
 
@@ -32,11 +33,13 @@ struct ftdEntryStruct {
         ("CMMFORMAT.CTD"): cmmFormat entry [[name(s)]];
         ("CMMFUNCTIONTABLE.CTD"): cmmFunctionTable entries[entrySize / 12] [[name(s)]];
         ("CMPPSCOOPSKILLTABLE.CTD"): cmpPsCoopSkillTable entries[entrySize / 8] [[name(s)]];
+        ("CMPPSCOOPCHGPERSONALTABLE.CTD"): cmpPsCoopChgPersonalTable entries[entrySize/8] [[name(s)]];
         ("FLDWIREANIMDATA.FTD"): fldWireAnimData entry [[name(s)]];
         ("FLDDNGPACK.FTD"): fldDngPack entry [[name(s)]];
         ("FLDPLAYERSPEED.FTD"): fldPlayerSpeed entry [[name(s)]];
         ("FLDLMAPSTATION.FTD"): fldLmapStation entry [[name(s)]];
         ("FLDLMAPFARE.FTD"): fldLmapFare entry [[name(s)]];
+        ("FLDWHOLEMAPTABLE.FTD"): fldWholeMapTable entry [[name(s)]];
         (_): u8 bytes[entrySize] [[name(s)]];
     }
 }[[inline]];

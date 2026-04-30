@@ -94,10 +94,4 @@ struct MtdEntry {
 };
 
 MtdHeader header @0x00;
-MtdEntry entries[header.entryCount] @0x30;.mtd"): MtdVideoDataEntry entry;
-        (_) : u16 entry;
-    }
-};
-
-MtdHeader header @0x00;
 MtdEntry entries[header.entryCount] @0x30;
