@@ -1,5 +1,3 @@
-//#include <atlus/p5r/enums/confidants.expat>
-
 struct cmmFormat {
 	s32 listOrder, unknown1;
 	Arcana cardTexPlus1;

@@ -1,12 +1,192 @@
 // uses currentBlockIdx from tbl.hexpat
 // uses currentBlockSize from tbl.hexpat
 
+#include <atlus/p5r/common/Bitflag.expat>
+
+enum ElementType : s8 {
+    Passive = -1,
+    Physical = 0,
+    Gun = 1,
+    Fire = 2,
+    Ice = 3,
+    Electric = 4,
+    Wind = 5,
+    Psy = 6,
+    Nuke = 7,
+    Bless = 8,
+    Curse = 9,
+    Almighty = 10,
+    Dizzy = 11,
+    Confuse = 12,
+    Fear = 13,
+    Forget = 14,
+    Hunger = 15,
+    Sleep = 16,
+    Rage = 17,
+    Despair = 18,
+    Brainwash = 19,
+    Healing = 20,
+    Support = 21,
+};
+
 struct SkillElements {
-    s8 ElementType;
+    ElementType element;
     s8 IsPassive;
     s8 Inheritable;
     u8 UnkR[4];
     u8 RedundantBitfield;
+};
+
+enum CostKind : s8 {
+    None,
+    HP,
+    SP,
+};
+
+enum NumTargets : s8 {
+    Single,
+    Multi,
+    AllExceptSelf,
+    Unknown_PlumeOfDuskRelated,
+};
+
+bitfield ValidTargets {
+    ally: 1;
+    enemy: 1;
+    padding: 6;
+}[[bitfield_order(std::core::BitfieldOrder::LeastToMostSignificant, 8)]];
+
+enum TargetRestrictions : s8 { // feel like this might be a bitfield tbh -ocean
+    NoAdditionalRestrictions = 0,
+    RandomTwoFromSelection = 1, // used by Diffraction Arrow, Distortion Wave
+    Unknown_DreadfulScreamRelated = 2, // used by Cognitive Wakaba's Dreadful Scream
+    Unknown_WingBlastRelated = 4, // used by Cognitive Wakaba's Wing Blast
+    SelfOnly = 16,
+    SelfNotAllowed = 32,
+    UnconsciousOnly = 64, // used for revival skills
+};
+
+bitfield EffectBitfield {
+    atkUp: 1;
+    atkDown: 1;
+    evadeUp: 1;
+    evadeDown: 1;
+    defUp: 1;
+    defDown: 1;
+    accUp: 1;
+    accDown: 1;
+    charge: 1;
+    concentrate: 1;
+    removeBuffs: 1;
+    removeDebuffs: 1;
+    critUp: 1;
+    critWayUp: 1;
+    tetrakarn: 1;
+    makarakarn: 1;
+    fireBreak: 1;
+    iceBreak: 1;
+    elecBreak: 1;
+    windBreak: 1;
+    nukeBreak: 1;
+    psyBreak: 1;
+    ailmentSusceptibilityUp: 1;
+    tetraBreak: 1;
+    makaraBreak: 1;
+    blockInstakill: 1;
+    fireWall: 1;
+    iceWall: 1;
+    elecWall: 1;
+    windWall: 1;
+    nukeWall: 1;
+    psyWall: 1;
+    burn: 1;
+    freeze: 1;
+    shock: 1;
+    dizzy: 1;
+    confuse: 1;
+    fear: 1;
+    forget: 1;
+    hunger: 1;
+    sleep: 1;
+    rage: 1;
+    despair: 1;
+    brainwash: 1;
+    desperation: 1;
+    berserk: 1; // visual only
+    noSPFlee: 1;
+    lust: 1;
+    wrath: 1;
+    jealousy: 1;
+    weakToAllElements: 1;
+    unconscious: 1;
+    knockdown: 1;
+    gluttony: 1;
+    rattled: 1;
+    counter: 1;
+}[[bitfield_order(std::core::BitfieldOrder::LeastToMostSignificant, 56)]];
+
+enum ExtraEffects : s8 {
+    NoEffect6 = 0,
+    OnlyHitTargetsInflictedWithFear = 1, // used by Ghastly Wail
+    EscapeBattle = 2,
+	ExtraDamageToDowned = 3,
+    ThrowAwayMoney = 6,
+	AffectMaleAlliesonly = 7,
+	AffectFemaleAlliesonly = 8,
+	BLOCKskillifguardbutkillifdizzyUNTESTED = 9,
+	DizzyDown1moreGuaranteedUNTESTED = 10,
+	randomresistancechangesUNTESTED = 11,
+	Allfoesweaklightanddarkto1UNTESTED = 12,
+	AlwaysKills = 13, // used for 9999 damage Megidolaon (603)
+	killallfoeswithailments = 14,
+	BigBangBurgerDocumentVisualUNTESTED = 15, // used by Shadow Okumura's Sacrifice Order
+	PowerUpIfSurrounded = 16,
+    BatonPassDamageUp = 17,
+	ignoreresistance = 18,
+    TargetedChanceUp = 19, // increases chance of being targeted by enemies
+    TargetedChanceWayUp = 20, // greatly increases chance of being targeted by enemies
+    IfHungerAilmentExistsHealAndCureInstead = 21, // used for Big Bang Challenge; needs testing with other ailments
+    CasterAttackWayDownNonNegatable = 22, // used for Beast Weaver
+	LessChanceTobeTargeted = 23,
+};
+
+enum HPEffect : s8 {
+    NoDamageOrHealing = 0,
+    DealDamage = 1, // deal damage, affected by damage stat
+    RestoreHealth = 2, // restore health, varies based on stats
+    SetHP = 3, // set HP to a specified value
+    DealExactDamage = 4, // deals EXACTLY the amount of damage specified, regardless of stats
+    RestoreExactHealth = 5, // restores EXACTLY the amount of health specified, regardless of stats
+    Unknown_Damage6 = 6, // seems to be the same as DealDamage? Needs more testing
+    Unknown_Healing7 = 7, // seems to be the same as RestoreHealth? Needs more testing
+    DamagePercentCurrentHP = 8, // deal a percent of current HP as damage
+    RestorePercentCurrentHP = 9, // restore a percent of current HP as health
+    DamagePercentMaxHP = 10, // deal a percent of max HP as damage
+    RestorePercentMaxHP = 11, // restore a percent of max HP as health
+    DrainDamage = 12, // deals damage, affected by damage stat, and restores equal HP to the user
+    DrainExactDamage = 13, // deals EXACTLY the amount of damage specified and restores equal HP to the user
+    Unknown_Damage14 = 14, // seems to be the same as DealDamage? Needs more testing
+    RestoreHealthWhiffChance = 15, // Has a chance to whiff, healing for minimal HP instead
+    DamageBasedOnHealthyPartyMembers = 16, // used for All-Out Attacks
+};
+
+enum SPEffect : s8 {
+    NoSPEffect = 0,
+	DepleteFixedSP = 4,
+    RestoreSP = 5,
+	DepleteSP = 8,
+	RestorePercentMaxSPUNKNOWN = 9, // this one does not reflect the exact percentage value
+    DepletePercentMaxSP = 10,
+    RestorePercentMaxSP = 11,
+	DrainSPbasedonMagic = 12,
+    DrainFixedSP = 13,
+};
+
+enum ApplyOrCureEffect : s8 {
+    NoEffect = 0,
+    ApplySingleorMultipleEffect = 1,
+    CureEffect = 2,
+    ApplyMultipleEffects = 3
 };
 
 struct SkillActiveData {
@@ -14,53 +194,127 @@ struct SkillActiveData {
     s8 CasterEffect[2];
     s16 unk03;
     s8 DamageStat;
-    s8 CostType;
+    CostKind costKind;
     s8 unk08;
     u8 SkillCost;
     s8 unk0a;
     s8 IsPhysical;
-    s8 NumberOfTargets;
-    s8 ValidTargets; // Fill Bitfield;
-    s8 TargetRestrictions; // Copypasta Enum
+    NumTargets numTargets;
+    ValidTargets validTargets;
+    TargetRestrictions targetRestrictions;
     s8 unk0f[5];
     s8 Accuracy;
     s8 MaxHits;
     s8 MinHits;
-    s8 DamageType;
+    HPEffect hpEffect;
     s16 BaseDamage;
-    s8 RestoreDrainSp;
+    SPEffect spEffect;
     s8 unk1b[2];
     s8 SpAmount;
-    s8 ApplyCureEffect;
+    ApplyOrCureEffect applyOrCureEffect;
     s8 EffectChance;
     s8 unk20;
-    s8 EffectBitfield[6];
-    s8 BuffsDebuffs;
+    EffectBitfield effectBitfield;
     s8 unk28[4];
-    s8 ExtraEffects;
+    ExtraEffects extraEffects;
     s8 CritChance;
     s8 unk2e[2];
 };
 
-struct SkillUnkR {
-    s32 block[10];
+bitfield TechAilmentFlags {
+    burn: 1;
+    freeze: 1;
+    shock: 1;
+    dizzy: 1;
+    confuse: 1;
+    fear: 1;
+    forget: 1;
+    hunger: 1;
+    sleep: 1;
+    rage: 1;
+    despair: 1;
+    brainwash: 1;
+    padding: 20;
+}[[bitfield_order(std::core::BitfieldOrder::LeastToMostSignificant, 32)]];
+
+enum TechElements : s32 {
+    Physical = 0,
+    Gun = 1,
+    Fire = 2,
+    Ice = 3,
+    Electric = 4,
+    Wind = 5,
+    Psy = 6,
+    Nuke = 7,
+    Bless = 8,
+    Curse = 9,
+    Almighty = 10,
 };
+
+struct TechnicalBehavior {
+    TechAilmentFlags ailments;
+    s32 allElementsInflictTech;
+    TechElements elements[5];
+    float damagesMultiplier;
+    padding[4]; // this is always 0 so probably padding
+    Bitflag bitflagReq; // in vanilla this is always either 0 or the knowing the heart flag, but can be changed to any flag
+};
+
+bitfield TraitFlags {
+    isUnique: 1;
+    treasureDemon: 1;
+    hasSubTrait: 1;
+    padding: 29;
+}[[bitfield_order(std::core::BitfieldOrder::LeastToMostSignificant, 32)]];
+
+bitfield TraitElementFlags {
+    unknown: 1; // prooooooooobably does nothing?
+    phys: 1;
+    gun: 1;
+    fire: 1;
+    ice: 1;
+    elec: 1;
+    wind: 1;
+    psy: 1;
+    nuke: 1;
+    bless: 1;
+    curse: 1;
+    almighty: 1;
+    // most of the ones after this need testing, but seem consistent with the ordering of skill elements
+    dizzy: 1;
+    confuse:1;
+    fear: 1;
+    forget: 1;
+    hunger: 1;
+    sleep: 1;
+    rage: 1;
+    despair: 1;
+    brainwash: 1;
+    healing: 1;
+    support: 1;
+    padding: 9;
+}[[bitfield_order(std::core::BitfieldOrder::LeastToMostSignificant, 32)]];
 
 struct SkillTraitData {
     u16 ord;
     u16 unk02;
     s32 effectRate;
-    s32 effect;
-    s32 effectSize;
-    s32 traitEx[10];
-    s32 traitFlags;
+    if (ord == 33 || ord == 99) {       // these two traits use the following 4 bytes as a bitfield to decide which skill elements should be affected by the trait
+        TraitElementFlags elementFlags; // (oddity: one RESERVE trait with ord 46 appears to "use" this field, but used traits with the same ord have it set to 0)
+    }
+    else {                              // otherwise, if sub-trait flag is enabled, use as an int that stores the id of another trait
+        s32 SubTraitId;                 // this trait will additionally perform the behavior of the sub-trait (minus the sub-trait's own sub-trait, if present)
+    }
+    float effectSize;
+    s32 substituteTraits[10]; // offered in fusion instead of this trait if treasureDemon flag is set or two ingredient personas have the same trait
+    TraitFlags traitFlags;
 };
 
 struct SkillTblBlock {
     match (currentBlockIdx) {
         (0) : SkillElements block[currentBlockSize / 8];
         (1) : SkillActiveData block[currentBlockSize / 0x30];
-        (2) : SkillUnkR block[currentBlockSize / 0x28];
+        (2) : TechnicalBehavior block[currentBlockSize / 0x28];
         (3) : SkillTraitData block[currentBlockSize / 0x3c];
     }
 };

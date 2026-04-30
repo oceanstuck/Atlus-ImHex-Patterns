@@ -1,3 +1,16 @@
+enum PartyMember : s8 {
+    Joker = 1,
+    Skull,
+    Mona,
+    Panther,
+    Fox,
+    Queen,
+    Noir,
+    Oracle,
+    Crow,
+    Violet
+};
+
 enum Arcana : s8 {
 	Fool = 1,
 	Magician = 2,

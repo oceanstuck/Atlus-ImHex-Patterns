@@ -1,17 +1,20 @@
+bitfield FlagSection {
+    padding: 4;
+    section: 4;
+}[[bitfield_order(std::core::BitfieldOrder::LeastToMostSignificant, 8)]];
+
 struct Bitflag {
-    s32 value;
+    FlagSection section;
+    u24 idInSection;
 }[[transform("tfm_Bitflag"), format("tfm_Bitflag"), static]];
 
-fn tfm_Bitflag(ref Bitflag self) {
-    return ConvertBitflag(self.value);
-};
+fn tfm_Bitflag(ref Bitflag self){
+    u16 offset = 0;
+    if (self.section.section == 1) offset = 3072;
+    if (self.section.section == 2) offset = 6144;
+    if (self.section.section == 3) offset = 11264;
+    if (self.section.section == 4) offset = 11776;
+    if (self.section.section == 5) offset = 12288;
 
-fn ConvertBitflag( s32 flag ) {
-    if      (flag >= 0x60000000){}
-    else if (flag >= 0x50000000){ flag = (flag - 0x50000000) + 12288; }
-    else if (flag >= 0x40000000){ flag = (flag - 0x40000000) + 11776; }
-    else if (flag >= 0x30000000){ flag = (flag - 0x30000000) + 11264; }
-    else if (flag >= 0x20000000){ flag = (flag - 0x20000000) + 6144;  }
-    else if (flag >= 0x10000000){ flag = (flag - 0x10000000) + 3072;  }
-    return flag;
+    return (offset + self.idInSection);
 };
