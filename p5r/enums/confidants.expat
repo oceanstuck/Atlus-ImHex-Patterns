@@ -33,6 +33,9 @@ enum Arcana : s8 {
 	Moon = 19,
 	Sun = 20,
 	Judgement = 21,
+    Aeon = 22,
+    Other = 23,
+    World = 24,
     Faith = 29,
     Councillor = 30,
     Faith_Sumire = 31
@@ -72,7 +75,7 @@ enum Confidant : s8 {
     Hifumi_Platonic,
     Sae_Unused,
     Kasumi,
-    Kasumi_Unused,
+    Kasumi_Platonic,
     Maruki,
     Sumire,
     Sumire_Platonic

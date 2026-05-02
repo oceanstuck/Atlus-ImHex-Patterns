@@ -295,16 +295,16 @@ bitfield TraitElementFlags {
     padding: 9;
 }[[bitfield_order(std::core::BitfieldOrder::LeastToMostSignificant, 32)]];
 
+union SubTraitBytes {               // these two traits use the following 4 bytes as a bitfield to decide which skill elements should be affected by the trait
+    TraitElementFlags elementFlags; // (oddity: one RESERVE trait with ord 46 appears to "use" this field, but used traits with the same ord have it set to 0)
+    s32 SubTraitId;                 // otherwise, if sub-trait flag is enabled, use as an int that stores the id of another trait
+};                                  // this trait will additionally perform the behavior of the sub-trait (minus the sub-trait's own sub-trait, if present)
+
 struct SkillTraitData {
-    u16 ord;
+    TraitEffect ord;
     u16 unk02;
     s32 effectRate;
-    if (ord == 33 || ord == 99) {       // these two traits use the following 4 bytes as a bitfield to decide which skill elements should be affected by the trait
-        TraitElementFlags elementFlags; // (oddity: one RESERVE trait with ord 46 appears to "use" this field, but used traits with the same ord have it set to 0)
-    }
-    else {                              // otherwise, if sub-trait flag is enabled, use as an int that stores the id of another trait
-        s32 SubTraitId;                 // this trait will additionally perform the behavior of the sub-trait (minus the sub-trait's own sub-trait, if present)
-    }
+    SubTraitBytes additionalInfo;
     float effectSize;
     s32 substituteTraits[10]; // offered in fusion instead of this trait if treasureDemon flag is set or two ingredient personas have the same trait
     TraitFlags traitFlags;

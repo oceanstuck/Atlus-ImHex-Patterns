@@ -1,0 +1,3173 @@
+enum Skill : s16 {
+    // Generated from skill name table entry: Attack
+    Attack = 0,
+
+    // Generated from skill name table entry: BLANK
+    BLANK = 1,
+
+    // Generated from skill name table entry: BLANK
+    BLANK2 = 2,
+
+    // Generated from skill name table entry: BLANK
+    BLANK3 = 3,
+
+    // Generated from skill name table entry: BLANK
+    BLANK4 = 4,
+
+    // Generated from skill name table entry: BLANK
+    BLANK5 = 5,
+
+    // Generated from skill name table entry: BLANK
+    BLANK6 = 6,
+
+    // Generated from skill name table entry: BLANK
+    BLANK7 = 7,
+
+    // Generated from skill name table entry: BLANK
+    BLANK8 = 8,
+
+    // Generated from skill name table entry: BLANK
+    BLANK9 = 9,
+
+    // Generated from skill name table entry: Agi
+    Agi = 10,
+
+    // Generated from skill name table entry: Agilao
+    Agilao = 11,
+
+    // Generated from skill name table entry: Agidyne
+    Agidyne = 12,
+
+    // Generated from skill name table entry: Maragi
+    Maragi = 13,
+
+    // Generated from skill name table entry: Maragion
+    Maragion = 14,
+
+    // Generated from skill name table entry: Maragidyne
+    Maragidyne = 15,
+
+    // Generated from skill name table entry: Agi
+    Agi_NoBurn = 16,
+
+    // Generated from skill name table entry: Maragi
+    Maragi_NoBurn = 17,
+
+    // Generated from skill name table entry: Fire Ball
+    FireBall = 18,
+
+    // Generated from skill name table entry: Raging Flames
+    RagingFlames = 19,
+
+    // Generated from skill name table entry: Bufu
+    Bufu = 20,
+
+    // Generated from skill name table entry: Bufula
+    Bufula = 21,
+
+    // Generated from skill name table entry: Bufudyne
+    Bufudyne = 22,
+
+    // Generated from skill name table entry: Mabufu
+    Mabufu = 23,
+
+    // Generated from skill name table entry: Mabufula
+    Mabufula = 24,
+
+    // Generated from skill name table entry: Mabufudyne
+    Mabufudyne = 25,
+
+    // Generated from skill name table entry: Bufu
+    Bufu_NoFreeze = 26,
+
+    // Generated from skill name table entry: Mabufu
+    Mabufu_NoFreeze = 27,
+
+    // Generated from skill name table entry: Snow Ball
+    SnowBall = 28,
+
+    // Generated from skill name table entry: Megidolaon
+    Megidolaon_FafnirBoss = 29,
+
+    // Generated from skill name table entry: Garu
+    Garu = 30,
+
+    // Generated from skill name table entry: Garula
+    Garula = 31,
+
+    // Generated from skill name table entry: Garudyne
+    Garudyne = 32,
+
+    // Generated from skill name table entry: Magaru
+    Magaru = 33,
+
+    // Generated from skill name table entry: Magarula
+    Magarula = 34,
+
+    // Generated from skill name table entry: Magarudyne
+    Magarudyne = 35,
+
+    // Generated from skill name table entry: Garu
+    Garu_AlwaysHits = 36,
+
+    // Generated from skill name table entry: Gale Ball
+    GaleBall = 37,
+
+    // Generated from skill name table entry: Bless Ball
+    BlessBall = 38,
+
+    // Generated from skill name table entry: Curse Ball
+    CurseBall = 39,
+
+    // Generated from skill name table entry: Zio
+    Zio = 40,
+
+    // Generated from skill name table entry: Zionga
+    Zionga = 41,
+
+    // Generated from skill name table entry: Ziodyne
+    Ziodyne = 42,
+
+    // Generated from skill name table entry: Mazio
+    Mazio = 43,
+
+    // Generated from skill name table entry: Mazionga
+    Mazionga = 44,
+
+    // Generated from skill name table entry: Maziodyne
+    Maziodyne = 45,
+
+    // Generated from skill name table entry: Zio
+    Zio_NoShock = 46,
+
+    // Generated from skill name table entry: Mazio
+    Mazio_NoShock = 47,
+
+    // Generated from skill name table entry: Volt Ball
+    VoltBall = 48,
+
+    // Generated from skill name table entry: Make It Rain
+    MakeitRain_NoMoney = 49,
+
+    // Generated from skill name table entry: Hama
+    Hama = 50,
+
+    // Generated from skill name table entry: Hamaon
+    Hamaon = 51,
+
+    // Generated from skill name table entry: Mahama
+    Mahama = 52,
+
+    // Generated from skill name table entry: Mahamaon
+    Mahamaon = 53,
+
+    // Generated from skill name table entry: Kouha
+    Kouha = 54,
+
+    // Generated from skill name table entry: Kouga
+    Kouga = 55,
+
+    // Generated from skill name table entry: Kougaon
+    Kougaon = 56,
+
+    // Generated from skill name table entry: Makouha
+    Makouha = 57,
+
+    // Generated from skill name table entry: Makouga
+    Makouga = 58,
+
+    // Generated from skill name table entry: Makougaon
+    Makougaon = 59,
+
+    // Generated from skill name table entry: Mudo
+    Mudo = 60,
+
+    // Generated from skill name table entry: Mudoon
+    Mudoon = 61,
+
+    // Generated from skill name table entry: Mamudo
+    Mamudo = 62,
+
+    // Generated from skill name table entry: Mamudoon
+    Mamudoon = 63,
+
+    // Generated from skill name table entry: Eiha
+    Eiha = 64,
+
+    // Generated from skill name table entry: Eiga
+    Eiga = 65,
+
+    // Generated from skill name table entry: Eigaon
+    Eigaon = 66,
+
+    // Generated from skill name table entry: Maeiha
+    Maeiha = 67,
+
+    // Generated from skill name table entry: Maeiga
+    Maeiga = 68,
+
+    // Generated from skill name table entry: Maeigaon
+    Maeigaon = 69,
+
+    // Generated from skill name table entry: Megido
+    Megido = 70,
+
+    // Generated from skill name table entry: Megidola
+    Megidola = 71,
+
+    // Generated from skill name table entry: Megidolaon
+    Megidolaon = 72,
+
+    // Generated from skill name table entry: Frei
+    Frei = 73,
+
+    // Generated from skill name table entry: Freila
+    Freila = 74,
+
+    // Generated from skill name table entry: Freidyne
+    Freidyne = 75,
+
+    // Generated from skill name table entry: Mafrei
+    Mafrei = 76,
+
+    // Generated from skill name table entry: Mafreila
+    Mafreila = 77,
+
+    // Generated from skill name table entry: Mafreidyne
+    Mafreidyne = 78,
+
+    // Generated from skill name table entry: Nuke Ball
+    NukeBall = 79,
+
+    // Generated from skill name table entry: Dazzler
+    Dazzler = 80,
+
+    // Generated from skill name table entry: Nocturnal Flash
+    NocturnalFlash = 81,
+
+    // Generated from skill name table entry: Pulinpa
+    Pulinpa = 82,
+
+    // Generated from skill name table entry: Tentarafoo
+    Tentarafoo = 83,
+
+    // Generated from skill name table entry: Evil Touch
+    EvilTouch = 84,
+
+    // Generated from skill name table entry: Evil Smile
+    EvilSmile = 85,
+
+    // Generated from skill name table entry: Makajama
+    Makajama = 86,
+
+    // Generated from skill name table entry: Makajamaon
+    Makajamaon = 87,
+
+    // Generated from skill name table entry: Famine's Breath
+    FaminesBreath = 88,
+
+    // Generated from skill name table entry: Famine's Scream
+    FaminesScream = 89,
+
+    // Generated from skill name table entry: Dormina
+    Dormina = 90,
+
+    // Generated from skill name table entry: Lullaby
+    Lullaby = 91,
+
+    // Generated from skill name table entry: Taunt
+    Taunt = 92,
+
+    // Generated from skill name table entry: Wage War
+    WageWar = 93,
+
+    // Generated from skill name table entry: Ominous Words
+    OminousWords = 94,
+
+    // Generated from skill name table entry: Abysmal Surge
+    AbysmalSurge = 95,
+
+    // Generated from skill name table entry: Marin Karin
+    MarinKarin = 96,
+
+    // Generated from skill name table entry: Brain Jack
+    BrainJack = 97,
+
+    // Generated from skill name table entry: Trapped Rat
+    TrappedRat = 98,
+
+    // Generated from skill name table entry: Psy Ball
+    PsyBall = 99,
+
+    // Generated from skill name table entry: Self-destruct
+    Selfdestruct = 100,
+
+    // Generated from skill name table entry: Self-destruct
+    Selfdestruct2 = 101,
+
+    // Generated from skill name table entry: Self-destruct
+    Selfdestruct3 = 102,
+
+    // Generated from skill name table entry: Life Drain
+    LifeDrain = 103,
+
+    // Generated from skill name table entry: Spirit Drain
+    SpiritDrain = 104,
+
+    // Generated from skill name table entry: Life Leech
+    LifeLeech = 105,
+
+    // Generated from skill name table entry: Spirit Leech
+    SpiritLeech = 106,
+
+    // Generated from skill name table entry: Spirit Drain
+    SpiritDrain2 = 107,
+
+    // Generated from skill name table entry: NOT USED
+    NOTUSED_SnatchedKaja = 108,
+
+    // Generated from skill name table entry: BLANK
+    BLANK10 = 109,
+
+    // Generated from skill name table entry: Foul Breath
+    FoulBreath = 110,
+
+    // Generated from skill name table entry: Stagnant Air
+    StagnantAir = 111,
+
+    // Generated from skill name table entry: Reverse Rub
+    ReverseRub = 112,
+
+    // Generated from skill name table entry: Ghastly Wail
+    GhastlyWail = 113,
+
+    // Generated from skill name table entry: NOT USED
+    LavenzaAOA = 114,
+
+    // Generated from skill name table entry: Drain
+    Drain = 115,
+
+    // Generated from skill name table entry: Megidola
+    Megidola_AkechiRank8 = 116,
+
+    // Generated from skill name table entry: Launch
+    Launch = 117,
+
+    // Generated from skill name table entry: Special Fireworks
+    SpecialFireworks = 118,
+
+    // Generated from skill name table entry: Drift
+    Drift = 119,
+
+    // Generated from skill name table entry: Inferno
+    Inferno = 120,
+
+    // Generated from skill name table entry: Blazing Hell
+    BlazingHell = 121,
+
+    // Generated from skill name table entry: Low Burn
+    LowBurn = 122,
+
+    // Generated from skill name table entry: Med Burn
+    MedBurn = 123,
+
+    // Generated from skill name table entry: High Burn
+    HighBurn = 124,
+
+    // Generated from skill name table entry: Low Freeze
+    LowFreeze = 125,
+
+    // Generated from skill name table entry: Med Freeze
+    MedFreeze = 126,
+
+    // Generated from skill name table entry: High Freeze
+    HighFreeze = 127,
+
+    // Generated from skill name table entry: Low Shock
+    LowShock = 128,
+
+    // Generated from skill name table entry: Med Shock
+    MedShock = 129,
+
+    // Generated from skill name table entry: Diamond Dust
+    DiamondDust = 130,
+
+    // Generated from skill name table entry: Ice Age
+    IceAge = 131,
+
+    // Generated from skill name table entry: High Shock
+    HighShock = 132,
+
+    // Generated from skill name table entry: Low Dizzy
+    LowDizzy = 133,
+
+    // Generated from skill name table entry: Med Dizzy
+    MedDizzy = 134,
+
+    // Generated from skill name table entry: High Dizzy
+    HighDizzy = 135,
+
+    // Generated from skill name table entry: Low Confuse
+    LowConfuse = 136,
+
+    // Generated from skill name table entry: Med Confuse
+    MedConfuse = 137,
+
+    // Generated from skill name table entry: High Confuse
+    HighConfuse = 138,
+
+    // Generated from skill name table entry: Low Fear
+    LowFear = 139,
+
+    // Generated from skill name table entry: Panta Rhei
+    PantaRhei = 140,
+
+    // Generated from skill name table entry: Vacuum Wave
+    VacuumWave = 141,
+
+    // Generated from skill name table entry: Med Fear
+    MedFear = 142,
+
+    // Generated from skill name table entry: High Fear
+    HighFear = 143,
+
+    // Generated from skill name table entry: Low Forget
+    LowForget = 144,
+
+    // Generated from skill name table entry: Med Forget
+    MedForget = 145,
+
+    // Generated from skill name table entry: High Forget
+    HighForget = 146,
+
+    // Generated from skill name table entry: Low Brainwash
+    LowBrainwash = 147,
+
+    // Generated from skill name table entry: Med Brainwash
+    MedBrainwash = 148,
+
+    // Generated from skill name table entry: High Brainwash
+    HighBrainwash = 149,
+
+    // Generated from skill name table entry: Thunder Reign
+    ThunderReign = 150,
+
+    // Generated from skill name table entry: Wild Thunder
+    WildThunder = 151,
+
+    // Generated from skill name table entry: Low Sleep
+    LowSleep = 152,
+
+    // Generated from skill name table entry: Med Sleep
+    MedSleep = 153,
+
+    // Generated from skill name table entry: High Sleep
+    HighSleep = 154,
+
+    // Generated from skill name table entry: Low Rage
+    LowRage = 155,
+
+    // Generated from skill name table entry: Med Rage
+    MedRage = 156,
+
+    // Generated from skill name table entry: High Rage
+    HighRage = 157,
+
+    // Generated from skill name table entry: Low Despair
+    LowDespair = 158,
+
+    // Generated from skill name table entry: Med Despair
+    MedDespair = 159,
+
+    // Generated from skill name table entry: Divine Judgment
+    DivineJudgment = 160,
+
+    // Generated from skill name table entry: Samsara
+    Samsara = 161,
+
+    // Generated from skill name table entry: High Despair
+    HighDespair = 162,
+
+    // Generated from skill name table entry: Low All Ail
+    LowAllAil = 163,
+
+    // Generated from skill name table entry: Mid All Ail
+    MidAllAil = 164,
+
+    // Generated from skill name table entry: High All Ail
+    HighAllAil = 165,
+
+    // Generated from skill name table entry: Adam Skill 1
+    AdamSkill1 = 166,
+
+    // Generated from skill name table entry: Revitalize Soul
+    RevitalizeSoul = 167,
+
+    // Generated from skill name table entry: Grand Palm
+    GrandPalm = 168,
+
+    // Generated from skill name table entry: Full Force
+    FullForce = 169,
+
+    // Generated from skill name table entry: Demonic Decree
+    DemonicDecree = 170,
+
+    // Generated from skill name table entry: Die For Me!
+    DieForMe = 171,
+
+    // Generated from skill name table entry: Support Plus 3
+    SupportPlus3 = 172,
+
+    // Generated from skill name table entry: Support Plus 2
+    SupportPlus2 = 173,
+
+    // Generated from skill name table entry: Support Plus 1
+    SupportPlus1 = 174,
+
+    // Generated from skill name table entry: Support Rate Up
+    SupportRateUp = 175,
+
+    // Generated from skill name table entry: Atomic Flare
+    AtomicFlare = 176,
+
+    // Generated from skill name table entry: Cosmic Flare
+    CosmicFlare = 177,
+
+    // Generated from skill name table entry: Mindfulness
+    Mindfulness = 178,
+
+    // Generated from skill name table entry: Wakefulness
+    Wakefulness = 179,
+
+    // Generated from skill name table entry: Black Viper
+    BlackViper = 180,
+
+    // Generated from skill name table entry: Morning Star
+    MorningStar = 181,
+
+    // Generated from skill name table entry: Abyssal Eye
+    AbyssalEye = 182,
+
+    // Generated from skill name table entry: Champions Cup
+    ChampionsCup = 183,
+
+    // Generated from skill name table entry: Bleeding Dry Brush
+    BleedingDryBrush = 184,
+
+    // Generated from skill name table entry: Vault Guardian
+    VaultGuardian = 185,
+
+    // Generated from skill name table entry: Wings of Wisdom
+    WingsOfWisdom = 186,
+
+    // Generated from skill name table entry: Presidents Insight
+    PresidentsInsight = 187,
+
+    // Generated from skill name table entry: Gamblers Foresight
+    GamblersForesight = 188,
+
+    // Generated from skill name table entry: Tyrants Will
+    TyrantsWill = 189,
+
+    // Generated from skill name table entry: Psi
+    Psi = 190,
+
+    // Generated from skill name table entry: Psio
+    Psio = 191,
+
+    // Generated from skill name table entry: Psiodyne
+    Psiodyne = 192,
+
+    // Generated from skill name table entry: Mapsi
+    Mapsi = 193,
+
+    // Generated from skill name table entry: Mapsio
+    Mapsio = 194,
+
+    // Generated from skill name table entry: Mapsiodyne
+    Mapsiodyne = 195,
+
+    // Generated from skill name table entry: Attack Position
+    AttackPosition = 196,
+
+    // Generated from skill name table entry: Psycho Force
+    PsychoForce = 197,
+
+    // Generated from skill name table entry: Psycho Blast
+    PsychoBlast = 198,
+
+    // Generated from skill name table entry: Universal Power
+    UniversalPower = 199,
+
+    // Generated from skill name table entry: Lunge
+    Lunge = 200,
+
+    // Generated from skill name table entry: Assault Dive
+    AssaultDive = 201,
+
+    // Generated from skill name table entry: Megaton Raid
+    MegatonRaid = 202,
+
+    // Generated from skill name table entry: God's Hand
+    GodsHand = 203,
+
+    // Generated from skill name table entry: Lunge
+    Lunge_NoCrit = 204,
+
+    // Generated from skill name table entry: Lucky Punch
+    LuckyPunch = 205,
+
+    // Generated from skill name table entry: Miracle Punch
+    MiraclePunch = 206,
+
+    // Generated from skill name table entry: Kill Rush
+    KillRush = 207,
+
+    // Generated from skill name table entry: Gatling Blow
+    GatlingBlow = 208,
+
+    // Generated from skill name table entry: Piercing Strike
+    PiercingStrike = 209,
+
+    // Generated from skill name table entry: Cleave
+    Cleave = 210,
+
+    // Generated from skill name table entry: Giant Slice
+    GiantSlice = 211,
+
+    // Generated from skill name table entry: Brave Blade
+    BraveBlade = 212,
+
+    // Generated from skill name table entry: Sword Dance
+    SwordDance = 213,
+
+    // Generated from skill name table entry: Holy Benevolence
+    HolyBenevolence = 214,
+
+    // Generated from skill name table entry: Hassou Tobi
+    HassouTobi = 215,
+
+    // Generated from skill name table entry: Ayamur
+    Ayamur = 216,
+
+    // Generated from skill name table entry: Death Scythe
+    DeathScythe = 217,
+
+    // Generated from skill name table entry: UNUSED
+    UNUSED_DistortedWeakDef = 218,
+
+    // Generated from skill name table entry: NOT USED
+    NOTUSED_SummonForConversationQuest = 219,
+
+    // Generated from skill name table entry: Cornered Fang
+    CorneredFang = 220,
+
+    // Generated from skill name table entry: Rising Slash
+    RisingSlash = 221,
+
+    // Generated from skill name table entry: Deadly Fury
+    DeadlyFury = 222,
+
+    // Generated from skill name table entry: Nuclear Crush
+    NuclearCrush = 223,
+
+    // Generated from skill name table entry: Snap
+    Snap = 224,
+
+    // Generated from skill name table entry: Triple Down
+    TripleDown = 225,
+
+    // Generated from skill name table entry: One-shot Kill
+    OneshotKill = 226,
+
+    // Generated from skill name table entry: Riot Gun
+    RiotGun = 227,
+
+    // Generated from skill name table entry: Double Shot
+    DoubleShot = 228,
+
+    // Generated from skill name table entry: Origin Light
+    OriginLight = 229,
+
+    // Generated from skill name table entry: Vajra Blast
+    VajraBlast = 230,
+
+    // Generated from skill name table entry: Vorpal Blade
+    VorpalBlade = 231,
+
+    // Generated from skill name table entry: NOT USED
+    NOTUSED_DistortedAtkStrengthening = 232,
+
+    // Generated from skill name table entry: NOT USED
+    NOTUSED_DistortedCharge = 233,
+
+    // Generated from skill name table entry: NOT USED
+    NOTUSED_DistortedConcentrate = 234,
+
+    // Generated from skill name table entry: Vicious Strike
+    ViciousStrike = 235,
+
+    // Generated from skill name table entry: Heat Wave
+    HeatWave = 236,
+
+    // Generated from skill name table entry: Gigantomachia
+    Gigantomachia = 237,
+
+    // Generated from skill name table entry: Swirling Psychokinesis
+    SwirlingPsychokinesis = 238,
+
+    // Generated from skill name table entry: Tyrants Purge
+    TyrantsPurge = 239,
+
+    // Generated from skill name table entry: Mass Ball
+    MassBall = 240,
+
+    // Generated from skill name table entry: Rampage
+    Rampage = 241,
+
+    // Generated from skill name table entry: Swift Strike
+    SwiftStrike = 242,
+
+    // Generated from skill name table entry: Deathbound
+    Deathbound = 243,
+
+    // Generated from skill name table entry: Agneyastra
+    Agneyastra = 244,
+
+    // Generated from skill name table entry: NOT USED
+    NOTUSED_MarukiAffinityChange = 245,
+
+    // Generated from skill name table entry: Regeneration
+    Regeneration = 246,
+
+    // Generated from skill name table entry: Rising Slash
+    RisingSlash2 = 247,
+
+    // Generated from skill name table entry: Deadly Fury
+    DeadlyFury2 = 248,
+
+    // Generated from skill name table entry: Tyrants Judgement
+    TyrantsJudgement = 249,
+
+    // Generated from skill name table entry: Double Fangs
+    DoubleFangs = 250,
+
+    // Generated from skill name table entry: Power Slash
+    PowerSlash = 251,
+
+    // Generated from skill name table entry: Shapeless Guard
+    ShapelessGuard = 252,
+
+    // Generated from skill name table entry: Tempest Slash
+    TempestSlash = 253,
+
+    // Generated from skill name table entry: Myriad Slashes
+    MyriadSlashes = 254,
+
+    // Generated from skill name table entry: Amplify Force
+    AmplifyForce = 255,
+
+    // Generated from skill name table entry: Amplify Magic
+    AmplifyMagic = 256,
+
+    // Generated from skill name table entry: Raining Seeds
+    RainingSeeds = 257,
+
+    // Generated from skill name table entry: Energy Stream
+    EnergyStream = 258,
+
+    // Generated from skill name table entry: Flow
+    Flow = 259,
+
+    // Generated from skill name table entry: Sledgehammer
+    Sledgehammer = 260,
+
+    // Generated from skill name table entry: Skull Cracker
+    SkullCracker = 261,
+
+    // Generated from skill name table entry: Terror Claw
+    TerrorClaw = 262,
+
+    // Generated from skill name table entry: Headbutt
+    Headbutt = 263,
+
+    // Generated from skill name table entry: Stomach Blow
+    StomachBlow = 264,
+
+    // Generated from skill name table entry: Dream Needle
+    DreamNeedle = 265,
+
+    // Generated from skill name table entry: Hysterical Slap
+    HystericalSlap = 266,
+
+    // Generated from skill name table entry: Negative Pile
+    NegativePile = 267,
+
+    // Generated from skill name table entry: Brain Shake
+    BrainShake = 268,
+
+    // Generated from skill name table entry: Attack
+    Attack2 = 269,
+
+    // Generated from skill name table entry: Flash Bomb
+    FlashBomb = 270,
+
+    // Generated from skill name table entry: Mind Slice
+    MindSlice = 271,
+
+    // Generated from skill name table entry: Bloodbath
+    Bloodbath = 272,
+
+    // Generated from skill name table entry: Memory Blow
+    MemoryBlow = 273,
+
+    // Generated from skill name table entry: Insatiable Strike
+    InsatiableStrike = 274,
+
+    // Generated from skill name table entry: Dormin Rush
+    DorminRush = 275,
+
+    // Generated from skill name table entry: Oni-Kagura
+    OniKagura = 276,
+
+    // Generated from skill name table entry: Bad Beat
+    BadBeat = 277,
+
+    // Generated from skill name table entry: Brain Buster
+    BrainBuster = 278,
+
+    // Generated from skill name table entry: Laevateinn
+    Laevateinn = 279,
+
+    // Generated from skill name table entry: Handgun
+    Handgun = 280,
+
+    // Generated from skill name table entry: Shotgun
+    Shotgun = 281,
+
+    // Generated from skill name table entry: Slingshot
+    Slingshot = 282,
+
+    // Generated from skill name table entry: Machine Gun
+    MachineGun = 283,
+
+    // Generated from skill name table entry: Assault Rifle
+    AssaultRifle = 284,
+
+    // Generated from skill name table entry: Revolver
+    Revolver = 285,
+
+    // Generated from skill name table entry: Grenade Launcher
+    GrenadeLauncher = 286,
+
+    // Generated from skill name table entry: Laser Gun
+    LaserGun = 287,
+
+    // Generated from skill name table entry: Antique Rifle
+    AntiqueRifle = 288,
+
+    // Generated from skill name table entry: Tyrant Stance
+    TyrantStance = 289,
+
+    // Generated from skill name table entry: Fighting Spirit
+    FightingSpirit = 290,
+
+    // Generated from skill name table entry: Miracle Rush
+    MiracleRush = 291,
+
+    // Generated from skill name table entry: Checkmate
+    Checkmate = 292,
+
+    // Generated from skill name table entry: Hyakka Ryouran
+    HyakkaRyouran = 293,
+
+    // Generated from skill name table entry: High Energy
+    HighEnergy = 294,
+
+    // Generated from skill name table entry: Ultimate Healing Support
+    UltimateHealingSupport = 295,
+
+    // Generated from skill name table entry: Life Wall
+    LifeWall = 296,
+
+    // Generated from skill name table entry: Rebellion Blade
+    RebellionBlade = 297,
+
+    // Generated from skill name table entry: Masquerade
+    Masquerade = 298,
+
+    // Generated from skill name table entry: Guiding Tendril
+    GuidingTendril = 299,
+
+    // Generated from skill name table entry: Dia
+    Dia = 300,
+
+    // Generated from skill name table entry: Diarama
+    Diarama = 301,
+
+    // Generated from skill name table entry: Diarahan
+    Diarahan = 302,
+
+    // Generated from skill name table entry: Brave Step
+    BraveStep = 303,
+
+    // Generated from skill name table entry: Maruki Punch
+    MarukiPunch = 304,
+
+    // Generated from skill name table entry: Media
+    Media = 305,
+
+    // Generated from skill name table entry: Mediarama
+    Mediarama = 306,
+
+    // Generated from skill name table entry: Mediarahan
+    Mediarahan = 307,
+
+    // Generated from skill name table entry: Brutal Impact
+    BrutalImpact = 308,
+
+    // Generated from skill name table entry: Cursed Strike
+    CursedStrike = 309,
+
+    // Generated from skill name table entry: Recarm
+    Recarm = 310,
+
+    // Generated from skill name table entry: Samarecarm
+    Samarecarm = 311,
+
+    // Generated from skill name table entry: Recarmdra
+    Recarmdra = 312,
+
+    // Generated from skill name table entry: Sleuthing Instinct
+    SleuthingInstinct = 313,
+
+    // Generated from skill name table entry: Sleuthing Mastery
+    SleuthingMastery = 314,
+
+    // Generated from skill name table entry: Amrita Drop
+    AmritaDrop = 315,
+
+    // Generated from skill name table entry: Amrita Shower
+    AmritaShower = 316,
+
+    // Generated from skill name table entry: Holy Strike
+    HolyStrike = 317,
+
+    // Generated from skill name table entry: Salvation
+    Salvation = 318,
+
+    // Generated from skill name table entry: Nuclear Strike
+    NuclearStrike = 319,
+
+    // Generated from skill name table entry: Psychokinesis Strike
+    PsychokinesisStrike = 320,
+
+    // Generated from skill name table entry: Taunting Aura
+    TauntingAura = 321,
+
+    // Generated from skill name table entry: Storm Punishment
+    StormPunishment = 322,
+
+    // Generated from skill name table entry: Concealment
+    Concealment = 323,
+
+    // Generated from skill name table entry: Lightning Punishment
+    LightningPunishment = 324,
+
+    // Generated from skill name table entry: Patra
+    Patra = 325,
+
+    // Generated from skill name table entry: Punishing Hail
+    PunishingHail = 326,
+
+    // Generated from skill name table entry: Energy Shower
+    EnergyShower = 327,
+
+    // Generated from skill name table entry: Energy Drop
+    EnergyDrop = 328,
+
+    // Generated from skill name table entry: Baisudi
+    Baisudi = 329,
+
+    // Generated from skill name table entry: Me Patra
+    MePatra = 330,
+
+    // Generated from skill name table entry: Mabaisudi
+    Mabaisudi = 331,
+
+    // Generated from skill name table entry: Charge Ball
+    ChargeBall = 332,
+
+    // Generated from skill name table entry: Concentrated Ball
+    ConcentratedBall = 333,
+
+    // Generated from skill name table entry: Inferno Punishment
+    InfernoPunishment = 334,
+
+    // Generated from skill name table entry: Tarukaja
+    Tarukaja = 335,
+
+    // Generated from skill name table entry: Rakukaja
+    Rakukaja = 336,
+
+    // Generated from skill name table entry: Sukukaja
+    Sukukaja = 337,
+
+    // Generated from skill name table entry: Heat Riser
+    HeatRiser = 338,
+
+    // Generated from skill name table entry: Gunfire Punishment
+    GunfirePunishment = 339,
+
+    // Generated from skill name table entry: Matarukaja
+    Matarukaja = 340,
+
+    // Generated from skill name table entry: Marakukaja
+    Marakukaja = 341,
+
+    // Generated from skill name table entry: Masukukaja
+    Masukukaja = 342,
+
+    // Generated from skill name table entry: Thermopylae
+    Thermopylae = 343,
+
+    // Generated from skill name table entry: Guillotine Punishment
+    GuillotinePunishment = 344,
+
+    // Generated from skill name table entry: Tarunda
+    Tarunda = 345,
+
+    // Generated from skill name table entry: Rakunda
+    Rakunda = 346,
+
+    // Generated from skill name table entry: Sukunda
+    Sukunda = 347,
+
+    // Generated from skill name table entry: Debilitate
+    Debilitate = 348,
+
+    // Generated from skill name table entry: Quadruple Summon
+    QuadrupleSummon = 349,
+
+    // Generated from skill name table entry: Matarunda
+    Matarunda = 350,
+
+    // Generated from skill name table entry: Marakunda
+    Marakunda = 351,
+
+    // Generated from skill name table entry: Masukunda
+    Masukunda = 352,
+
+    // Generated from skill name table entry: Analysis
+    Analysis_Single = 353,
+
+    // Generated from skill name table entry: Analysis
+    Analysis_Multi = 354,
+
+    // Generated from skill name table entry: Dekunda
+    Dekunda = 355,
+
+    // Generated from skill name table entry: Dekaja
+    Dekaja = 356,
+
+    // Generated from skill name table entry: Explosion
+    Explosion = 357,
+
+    // Generated from skill name table entry: Explosion
+    Explosion2 = 358,
+
+    // Generated from skill name table entry: Sphynx Swipe
+    SphynxSwipe = 359,
+
+    // Generated from skill name table entry: Charge
+    Charge = 360,
+
+    // Generated from skill name table entry: Concentrate
+    Concentrate = 361,
+
+    // Generated from skill name table entry: Nose Dive
+    NoseDive = 362,
+
+    // Generated from skill name table entry: Kill Reward Up
+    KillRewardUp = 363,
+
+    // Generated from skill name table entry: Guard Reward Up
+    GuardRewardUp = 364,
+
+    // Generated from skill name table entry: Rebellion
+    Rebellion = 365,
+
+    // Generated from skill name table entry: Revolution
+    Revolution = 366,
+
+    // Generated from skill name table entry: Make It Rain
+    MakeitRain = 367,
+
+    // Generated from skill name table entry: Special Guards
+    SpecialGuards = 368,
+
+    // Generated from skill name table entry: Fake Artists Grace
+    FakeArtistsGrace = 369,
+
+    // Generated from skill name table entry: Tetrakarn
+    Tetrakarn = 370,
+
+    // Generated from skill name table entry: Makarakarn
+    Makarakarn = 371,
+
+    // Generated from skill name table entry: Tetraja
+    Tetraja = 372,
+
+    // Generated from skill name table entry: Taste Of Wrath
+    TasteofWrath = 373,
+
+    // Generated from skill name table entry: True Fake
+    TrueFake = 374,
+
+    // Generated from skill name table entry: Tetra Break
+    TetraBreak = 375,
+
+    // Generated from skill name table entry: Makara Break
+    MakaraBreak = 376,
+
+    // Generated from skill name table entry: Killshot Of Love
+    KillshotofLove = 377,
+
+    // Generated from skill name table entry: NOT USED
+    SumireFollowUp = 378,
+
+    // Generated from skill name table entry: NOT USED
+    SumireFollowUpGun = 379,
+
+    // Generated from skill name table entry: Fire Wall
+    FireWall = 380,
+
+    // Generated from skill name table entry: Ice Wall
+    IceWall = 381,
+
+    // Generated from skill name table entry: Elec Wall
+    ElecWall = 382,
+
+    // Generated from skill name table entry: Wind Wall
+    WindWall = 383,
+
+    // Generated from skill name table entry: BLANK
+    BLANK11 = 384,
+
+    // Generated from skill name table entry: Fire Break
+    FireBreak = 385,
+
+    // Generated from skill name table entry: Ice Break
+    IceBreak = 386,
+
+    // Generated from skill name table entry: Wind Break
+    WindBreak = 387,
+
+    // Generated from skill name table entry: Elec Break
+    ElecBreak = 388,
+
+    // Generated from skill name table entry: BLANK
+    BLANK12 = 389,
+
+    // Generated from skill name table entry: Trafuri
+    Trafuri = 390,
+
+    // Generated from skill name table entry: Traesto
+    Traesto = 391,
+
+    // Generated from skill name table entry: Active Barrier
+    ActiveBarrier = 392,
+
+    // Generated from skill name table entry: Nuke Wall
+    NukeWall = 393,
+
+    // Generated from skill name table entry: Psy Wall
+    PsyWall = 394,
+
+    // Generated from skill name table entry: Nuke Break
+    NukeBreak = 395,
+
+    // Generated from skill name table entry: Psy Break
+    PsyBreak = 396,
+
+    // Generated from skill name table entry: BLANK
+    BLANK13 = 397,
+
+    // Generated from skill name table entry: BLANK
+    BLANK14 = 398,
+
+    // Generated from skill name table entry: Flow
+    Flow1 = 399,
+
+    // Generated from skill name table entry: All-out Lv 1
+    AlloutLv1 = 400,
+
+    // Generated from skill name table entry: All-out Lv 2
+    AlloutLv2 = 401,
+
+    // Generated from skill name table entry: All-out Lv 3
+    AlloutLv3 = 402,
+
+    // Generated from skill name table entry: Emergency Escape
+    EmergencyEscape = 403,
+
+    // Generated from skill name table entry: Attack
+    Attack_Rage = 404,
+
+    // Generated from skill name table entry: Down Shot
+    DownShot = 405,
+
+    // Generated from skill name table entry: Summon
+    Summon = 406,
+
+    // Generated from skill name table entry: Call for Backup
+    CallforBackup = 407,
+
+    // Generated from skill name table entry: Outlaw Attack
+    OutlawAttack = 408,
+
+    // Generated from skill name table entry: Barrage
+    Barrage = 409,
+
+    // Generated from skill name table entry: Follow Crush
+    FollowCrush = 410,
+
+    // Generated from skill name table entry: Follow Claw
+    FollowClaw = 411,
+
+    // Generated from skill name table entry: Follow Whip
+    FollowWhip = 412,
+
+    // Generated from skill name table entry: Follow Blade
+    FollowBlade = 413,
+
+    // Generated from skill name table entry: Follow Knuckle
+    FollowKnuckle = 414,
+
+    // Generated from skill name table entry: Follow Axe
+    FollowAxe = 415,
+
+    // Generated from skill name table entry: Follow Saber
+    FollowSaber = 416,
+
+    // Generated from skill name table entry: Dispose Item
+    DisposeItem = 417,
+
+    // Generated from skill name table entry: Heal Enemy
+    HealEnemy = 418,
+
+    // Generated from skill name table entry: Death (Despair)
+    DeathDespair = 419,
+
+    // Generated from skill name table entry: Ally1 Follow-Up
+    Ally1FollowUp = 420,
+
+    // Generated from skill name table entry: Ally2 Follow-Up
+    Ally2FollowUp = 421,
+
+    // Generated from skill name table entry: Ally3 Follow-Up
+    Ally3FollowUp = 422,
+
+    // Generated from skill name table entry: Ally4 Follow-Up
+    Ally4FollowUp = 423,
+
+    // Generated from skill name table entry: Ally5 Follow-Up
+    Ally5FollowUp = 424,
+
+    // Generated from skill name table entry: Ally6 Follow-Up
+    Ally6FollowUp = 425,
+
+    // Generated from skill name table entry: Ally7 Follow-Up
+    Ally7FollowUp = 426,
+
+    // Generated from skill name table entry: Power Up Enemy
+    PowerUpEnemy_Atk = 427,
+
+    // Generated from skill name table entry: Power Up Enemy
+    PowerUpEnemy_Def = 428,
+
+    // Generated from skill name table entry: Power Up Enemy
+    PowerUpEnemy_Spd = 429,
+
+    // Generated from skill name table entry: Steal Info
+    StealInfo = 430,
+
+    // Generated from skill name table entry: Sup Matarukaja
+    SupMatarukaja = 431,
+
+    // Generated from skill name table entry: Sup Marakukaja
+    SupMarakukaja = 432,
+
+    // Generated from skill name table entry: Sup Masukukaja
+    SupMasukukaja = 433,
+
+    // Generated from skill name table entry: Sup All Kaja
+    SupAllKaja = 434,
+
+    // Generated from skill name table entry: Sup Charge
+    SupCharge = 435,
+
+    // Generated from skill name table entry: Sup HP 30
+    SupHP30 = 436,
+
+    // Generated from skill name table entry: Sup SP 10
+    SupSP10 = 437,
+
+    // Generated from skill name table entry: Sup Escape Route
+    SupEscapeRoute = 438,
+
+    // Generated from skill name table entry: Sup Third Eye
+    SupThirdEye = 439,
+
+    // Generated from skill name table entry: Subrecover HP
+    SubrecoverHP = 440,
+
+    // Generated from skill name table entry: Subrecover SP
+    SubrecoverSP = 441,
+
+    // Generated from skill name table entry: Analysis
+    Analysis = 442,
+
+    // Generated from skill name table entry: Deep Analysis
+    DeepAnalysis = 443,
+
+    // Generated from skill name table entry: Full Analysis
+    FullAnalysis = 444,
+
+    // Generated from skill name table entry: All-Out Attack
+    AllOutAttack = 445,
+
+    // Generated from skill name table entry: Dust Flurry
+    DustFlurry = 446,
+
+    // Generated from skill name table entry: Tongue Whip
+    TongueWhip = 447,
+
+    // Generated from skill name table entry: Whip Strike
+    WhipStrike = 448,
+
+    // Generated from skill name table entry: Lustful Slurp
+    LustfulSlurp = 449,
+
+    // Generated from skill name table entry: Libido Boost
+    LibidoBoost = 450,
+
+    // Generated from skill name table entry: Golden Knife
+    GoldenKnife = 451,
+
+    // Generated from skill name table entry: Lick
+    Lick = 452,
+
+    // Generated from skill name table entry: Gold Medal Spike
+    GoldMedalSpike = 453,
+
+    // Generated from skill name table entry: Volleyball Assault
+    VolleyballAssault = 454,
+
+    // Generated from skill name table entry: Maelstrom
+    Maelstrom = 455,
+
+    // Generated from skill name table entry: Flame Dance
+    FlameDance = 456,
+
+    // Generated from skill name table entry: Silent Snowscape
+    SilentSnowscape = 457,
+
+    // Generated from skill name table entry: Thunderclap
+    Thunderclap = 458,
+
+    // Generated from skill name table entry: Maeiga
+    Maeiga2 = 459,
+
+    // Generated from skill name table entry: Hunger All
+    HungerAll = 460,
+
+    // Generated from skill name table entry: Ocular Vulcan
+    OcularVulcan = 461,
+
+    // Generated from skill name table entry: Missile Party
+    MissileParty = 462,
+
+    // Generated from skill name table entry: Fear Gas
+    FearGas = 463,
+
+    // Generated from skill name table entry: Super VIP Form
+    SuperVIPForm = 464,
+
+    // Generated from skill name table entry: March of the Piggy
+    MarchofthePiggy = 465,
+
+    // Generated from skill name table entry: Sphinx Swipe
+    SphinxSwipe = 466,
+
+    // Generated from skill name table entry: Wing Blast
+    WingBlast = 467,
+
+    // Generated from skill name table entry: Rapid Ascent
+    RapidAscent = 468,
+
+    // Generated from skill name table entry: Sphinx Dive
+    SphinxDive = 469,
+
+    // Generated from skill name table entry: Dreadful Scream
+    DreadfulScream = 470,
+
+    // Generated from skill name table entry: Bite
+    Bite = 471,
+
+    // Generated from skill name table entry: Restore
+    Restore = 472,
+
+    // Generated from skill name table entry: The Artist's Grace
+    TheArtistsGrace = 473,
+
+    // Generated from skill name table entry: Work Order
+    WorkOrder = 474,
+
+    // Generated from skill name table entry: Sacrifice Order
+    SacrificeOrder = 475,
+
+    // Generated from skill name table entry: Selfless Devotion
+    SelflessDevotion = 476,
+
+    // Generated from skill name table entry: Penalty
+    Penalty = 477,
+
+    // Generated from skill name table entry: Coin Attack
+    CoinAttack = 478,
+
+    // Generated from skill name table entry: Severing Slash
+    SeveringSlash = 479,
+
+    // Generated from skill name table entry: Gatling Gun
+    GatlingGun = 480,
+
+    // Generated from skill name table entry: Berserker Dance
+    BerserkerDance = 481,
+
+    // Generated from skill name table entry: Roulette: HP
+    RouletteHP = 482,
+
+    // Generated from skill name table entry: Roulette: SP
+    RouletteSP = 483,
+
+    // Generated from skill name table entry: Roulette: Money
+    RouletteMoney = 484,
+
+    // Generated from skill name table entry: Roulette: Aid 1
+    RouletteAid1 = 485,
+
+    // Generated from skill name table entry: Roulette: Aid 2
+    RouletteAid2 = 486,
+
+    // Generated from skill name table entry: Roulette: Aid 3
+    RouletteAid3 = 487,
+
+    // Generated from skill name table entry: Beast King's Wrath
+    BeastKingsWrath = 488,
+
+    // Generated from skill name table entry: Hunting Stance
+    HuntingStance = 489,
+
+    // Generated from skill name table entry: Arm of Destruction
+    ArmofDestruction = 490,
+
+    // Generated from skill name table entry: Gryphon's Breath
+    GryphonsBreath = 491,
+
+    // Generated from skill name table entry: Royal Wing Beam
+    RoyalWingBeam = 492,
+
+    // Generated from skill name table entry: Cannon Fire
+    CannonFire = 493,
+
+    // Generated from skill name table entry: Cannon Barrage
+    CannonBarrage = 494,
+
+    // Generated from skill name table entry: Unholy Convergence
+    UnholyConvergence = 495,
+
+    // Generated from skill name table entry: Pyramid Blast
+    PyramidBlast = 496,
+
+    // Generated from skill name table entry: Tyrant's Fist
+    TyrantsFist = 497,
+
+    // Generated from skill name table entry: Tyrant's Glare
+    TyrantsGlare = 498,
+
+    // Generated from skill name table entry: Tyrant's Wave
+    TyrantsWave = 499,
+
+    // Generated from skill name table entry: Fig Seed
+    FigSeed = 500,
+
+    // Generated from skill name table entry: Medicine
+    Medicine = 501,
+
+    // Generated from skill name table entry: Ointment
+    Ointment = 502,
+
+    // Generated from skill name table entry: Antibiotic Gel
+    AntibioticGel = 503,
+
+    // Generated from skill name table entry: Life Stone
+    LifeStone = 504,
+
+    // Generated from skill name table entry: Bead
+    Bead = 505,
+
+    // Generated from skill name table entry: Value Medicine
+    ValueMedicine = 506,
+
+    // Generated from skill name table entry: Medical Kit
+    MedicalKit = 507,
+
+    // Generated from skill name table entry: Maka Leaf
+    MakaLeaf = 508,
+
+    // Generated from skill name table entry: Bead Chain
+    BeadChain = 509,
+
+    // Generated from skill name table entry: Soul Drop
+    SoulDrop = 510,
+
+    // Generated from skill name table entry: Snuff Soul
+    SnuffSoul = 511,
+
+    // Generated from skill name table entry: Chewing Soul
+    ChewingSoul = 512,
+
+    // Generated from skill name table entry: Soul Food
+    SoulFood = 513,
+
+    // Generated from skill name table entry: Revival Bead
+    RevivalBead = 514,
+
+    // Generated from skill name table entry: Balm of Life
+    BalmofLife = 515,
+
+    // Generated from skill name table entry: Royel Jelly
+    RoyelJelly = 516,
+
+    // Generated from skill name table entry: Organic Herb
+    OrganicHerb = 517,
+
+    // Generated from skill name table entry: Disclose
+    Disclose = 518,
+
+    // Generated from skill name table entry: Tranquilizer
+    Tranquilizer = 519,
+
+    // Generated from skill name table entry: Kopi Luwak
+    KopiLuwak = 520,
+
+    // Generated from skill name table entry: Goho-M
+    GohoM = 521,
+
+    // Generated from skill name table entry: Vanish Ball
+    VanishBall = 522,
+
+    // Generated from skill name table entry: Soma
+    Soma = 523,
+
+    // Generated from skill name table entry: Amrita Soda
+    AmritaSoda = 524,
+
+    // Generated from skill name table entry: Hiranya
+    Hiranya = 525,
+
+    // Generated from skill name table entry: Muscle Drink
+    MuscleDrink = 526,
+
+    // Generated from skill name table entry: Odd Morsel
+    OddMorsel = 527,
+
+    // Generated from skill name table entry: Rancid Gravy
+    RancidGravy = 528,
+
+    // Generated from skill name table entry: Plume of Dusk
+    PlumeofDusk = 529,
+
+    // Generated from skill name table entry: Magic Mirror
+    MagicMirror = 530,
+
+    // Generated from skill name table entry: Physical Mirror
+    PhysicalMirror = 531,
+
+    // Generated from skill name table entry: Universe Ring
+    UniverseRing = 532,
+
+    // Generated from skill name table entry: Sleipnir
+    Sleipnir = 533,
+
+    // Generated from skill name table entry: Obsidian Mirror
+    ObsidianMirror = 534,
+
+    // Generated from skill name table entry: Purifying Water
+    PurifyingWater = 535,
+
+    // Generated from skill name table entry: Purifying Salt
+    PurifyingSalt = 536,
+
+    // Generated from skill name table entry: Firecracker
+    Firecracker = 537,
+
+    // Generated from skill name table entry: San-zun Tama
+    SanzunTama = 538,
+
+    // Generated from skill name table entry: Ice Cube
+    IceCube = 539,
+
+    // Generated from skill name table entry: Dry Ice
+    DryIce = 540,
+
+    // Generated from skill name table entry: Pinwheel
+    Pinwheel = 541,
+
+    // Generated from skill name table entry: Yashichi
+    Yashichi = 542,
+
+    // Generated from skill name table entry: Ball Lightning
+    BallLightning = 543,
+
+    // Generated from skill name table entry: Tesla Coil
+    TeslaCoil = 544,
+
+    // Generated from skill name table entry: Smart Bomb
+    SmartBomb = 545,
+
+    // Generated from skill name table entry: Segami Rice
+    SegamiRice = 546,
+
+    // Generated from skill name table entry: Curse Paper
+    CursePaper = 547,
+
+    // Generated from skill name table entry: Flame Magatama
+    FlameMagatama = 548,
+
+    // Generated from skill name table entry: Wind Magatama
+    WindMagatama = 549,
+
+    // Generated from skill name table entry: Freeze Magatama
+    FreezeMagatama = 550,
+
+    // Generated from skill name table entry: Bolt Magatama
+    BoltMagatama = 551,
+
+    // Generated from skill name table entry: Homunculus
+    Homunculus = 552,
+
+    // Generated from skill name table entry: Removal Potion
+    RemovalPotion = 553,
+
+    // Generated from skill name table entry: Kouga Ball
+    KougaBall = 554,
+
+    // Generated from skill name table entry: Makouha Ball
+    MakouhaBall = 555,
+
+    // Generated from skill name table entry: Eiga Ball
+    EigaBall = 556,
+
+    // Generated from skill name table entry: Maeiga Ball
+    MaeigaBall = 557,
+
+    // Generated from skill name table entry: Psio Ball
+    PsioBall = 558,
+
+    // Generated from skill name table entry: Mapsi Ball
+    MapsiBall = 559,
+
+    // Generated from skill name table entry: Freila Ball
+    FreilaBall = 560,
+
+    // Generated from skill name table entry: Mafrei Ball
+    MafreiBall = 561,
+
+    // Generated from skill name table entry: Nuke Magatama
+    NukeMagatama = 562,
+
+    // Generated from skill name table entry: Psy Magatama
+    PsyMagatama = 563,
+
+    // Generated from skill name table entry: Bless Magatama
+    BlessMagatama = 564,
+
+    // Generated from skill name table entry: Curse Magatama
+    CurseMagatama = 565,
+
+    // Generated from skill name table entry: Cooking
+    Cooking = 566,
+
+    // Generated from skill name table entry: Snack
+    Snack = 567,
+
+    // Generated from skill name table entry: Shoes 1
+    Shoes1 = 568,
+
+    // Generated from skill name table entry: Shoes 2
+    Shoes2 = 569,
+
+    // Generated from skill name table entry: Shoes 3
+    Shoes3 = 570,
+
+    // Generated from skill name table entry: Juice Bar 1
+    JuiceBar1 = 571,
+
+    // Generated from skill name table entry: Juice Bar 2
+    JuiceBar2 = 572,
+
+    // Generated from skill name table entry: Juice Bar 3
+    JuiceBar3 = 573,
+
+    // Generated from skill name table entry: Juice Bar 4
+    JuiceBar4 = 574,
+
+    // Generated from skill name table entry: Energy Drink 1
+    EnergyDrink1 = 575,
+
+    // Generated from skill name table entry: Energy Drink 2
+    EnergyDrink2 = 576,
+
+    // Generated from skill name table entry: Energy Drink 3
+    EnergyDrink3 = 577,
+
+    // Generated from skill name table entry: Soda 1
+    Soda1 = 578,
+
+    // Generated from skill name table entry: Soda 2
+    Soda2 = 579,
+
+    // Generated from skill name table entry: Soda 3
+    Soda3 = 580,
+
+    // Generated from skill name table entry: Soda 4
+    Soda4 = 581,
+
+    // Generated from skill name table entry: Ration 1
+    Ration1 = 582,
+
+    // Generated from skill name table entry: Ration 2
+    Ration2 = 583,
+
+    // Generated from skill name table entry: Ration 3
+    Ration3 = 584,
+
+    // Generated from skill name table entry: Drug Store 1
+    DrugStore1 = 585,
+
+    // Generated from skill name table entry: Drug Store 2
+    DrugStore2 = 586,
+
+    // Generated from skill name table entry: Drug Store 3
+    DrugStore3 = 587,
+
+    // Generated from skill name table entry: Drug Store 4
+    DrugStore4 = 588,
+
+    // Generated from skill name table entry: Drug Store 5
+    DrugStore5 = 589,
+
+    // Generated from skill name table entry: Drug Store 6
+    DrugStore6 = 590,
+
+    // Generated from skill name table entry: Drug Store 7
+    DrugStore7 = 591,
+
+    // Generated from skill name table entry: Drug Store 8
+    DrugStore8 = 592,
+
+    // Generated from skill name table entry: Drug Store 9
+    DrugStore9 = 593,
+
+    // Generated from skill name table entry: Drug Store 10
+    DrugStore10 = 594,
+
+    // Generated from skill name table entry: Drug Store 11
+    DrugStore11 = 595,
+
+    // Generated from skill name table entry: Drug Store 12
+    DrugStore12 = 596,
+
+    // Generated from skill name table entry: Special Coffee 1
+    SpecialCoffee1 = 597,
+
+    // Generated from skill name table entry: Special Coffee 2
+    SpecialCoffee2 = 598,
+
+    // Generated from skill name table entry: Double Fangs
+    DoubleFangs_ShowtimeTutorial = 599,
+
+    // Generated from skill name table entry: Twins Down Attack
+    TwinsDownAttack = 600,
+
+    // Generated from skill name table entry: Caro Rod
+    CaroRod = 601,
+
+    // Generated from skill name table entry: Caro Attack
+    CaroAttack = 602,
+
+    // Generated from skill name table entry: Megidolaon
+    Megidolaon_AlwaysKills = 603,
+
+    // Generated from skill name table entry: Rays of Control
+    RaysofControl_3Arms = 604,
+
+    // Generated from skill name table entry: Rays of Control
+    RaysofControl_2Arms = 605,
+
+    // Generated from skill name table entry: Rays of Control
+    RaysofControl_1Arm = 606,
+
+    // Generated from skill name table entry: Rays of Control
+    RaysofControl_NoArms = 607,
+
+    // Generated from skill name table entry: Arrow of Light
+    ArrowofLight = 608,
+
+    // Generated from skill name table entry: Diffraction Arrow
+    DiffractionArrow = 609,
+
+    // Generated from skill name table entry: Light Edge
+    LightEdge = 610,
+
+    // Generated from skill name table entry: Gathering Light
+    GatheringLight = 611,
+
+    // Generated from skill name table entry: Eternal Light
+    EternalLight = 612,
+
+    // Generated from skill name table entry: Holy Change
+    HolyChange = 613,
+
+    // Generated from skill name table entry: Distortion Wave
+    DistortionWave = 614,
+
+    // Generated from skill name table entry: Tough Law
+    ToughLaw = 615,
+
+    // Generated from skill name table entry: Frail Law
+    FrailLaw = 616,
+
+    // Generated from skill name table entry: New Creation
+    NewCreation = 617,
+
+    // Generated from skill name table entry: Distortion Surge
+    DistortionSurge = 618,
+
+    // Generated from skill name table entry: Arrow of Light
+    ArrowofLight2 = 619,
+
+    // Generated from skill name table entry: Manifest Sword
+    ManifestSword = 620,
+
+    // Generated from skill name table entry: Manifest Gun
+    ManifestGun = 621,
+
+    // Generated from skill name table entry: Manifest Bell
+    ManifestBell = 622,
+
+    // Generated from skill name table entry: Sword of Judgment
+    SwordofJudgment = 623,
+
+    // Generated from skill name table entry: Capital Punishment
+    CapitalPunishment = 624,
+
+    // Generated from skill name table entry: Manifest Book
+    ManifestBook = 625,
+
+    // Generated from skill name table entry: Distorted Lust
+    DistortedLust = 626,
+
+    // Generated from skill name table entry: Gospel
+    Gospel = 627,
+
+    // Generated from skill name table entry: Distorted Wrath
+    DistortedWrath = 628,
+
+    // Generated from skill name table entry: Distorted Vanity
+    DistortedVanity = 629,
+
+    // Generated from skill name table entry: Song of Salvation
+    SongofSalvation = 630,
+
+    // Generated from skill name table entry: Wrath of God
+    WrathofGod = 631,
+
+    // Generated from skill name table entry: Distorted Gluttony
+    DistortedGluttony = 632,
+
+    // Generated from skill name table entry: Distorted Envy
+    DistortedEnvy = 633,
+
+    // Generated from skill name table entry: Song of Placation
+    SongofPlacation = 634,
+
+    // Generated from skill name table entry: Divine Apex
+    DivineApex = 635,
+
+    // Generated from skill name table entry: Rays of Control
+    RaysofControl_AllArms = 636,
+
+    // Generated from skill name table entry: Distorted Avarice
+    DistortedAvarice = 637,
+
+    // Generated from skill name table entry: Will of the People
+    WillofthePeople = 638,
+
+    // Generated from skill name table entry: Rays of Control
+    RaysofControl_Cutscene = 639,
+
+    // Generated from skill name table entry: Moral Support
+    MoralSupport = 640,
+
+    // Generated from skill name table entry: Active Support
+    ActiveSupport = 641,
+
+    // Generated from skill name table entry: Mental Hack
+    MentalHack = 642,
+
+    // Generated from skill name table entry: Emergency Shift
+    EmergencyShift = 643,
+
+    // Generated from skill name table entry: Final Guard
+    FinalGuard = 644,
+
+    // Generated from skill name table entry: Position Hack
+    PositionHack = 645,
+
+    // Generated from skill name table entry: High Analyze
+    HighAnalyze = 646,
+
+    // Generated from skill name table entry: Treasure Skimmer
+    TreasureSkimmer = 647,
+
+    // Generated from skill name table entry: Subrecover HP EX
+    SubrecoverHPEX = 648,
+
+    // Generated from skill name table entry: Subrecover SP EX
+    SubrecoverSPEX = 649,
+
+    // Generated from skill name table entry: Big Bang Treat
+    BigBangTreat = 650,
+
+    // Generated from skill name table entry: Explosion
+    Explosion3 = 651,
+
+    // Generated from skill name table entry: Explosion
+    Explosion4 = 652,
+
+    // Generated from skill name table entry: Explosion
+    Explosion5 = 653,
+
+    // Generated from skill name table entry: Big Bang Order
+    BigBangOrder = 654,
+
+    // Generated from skill name table entry: Roulette Time
+    RouletteTime = 655,
+
+    // Generated from skill name table entry: Trip-Upper
+    TripUpper = 656,
+
+    // Generated from skill name table entry: Lust Sphere
+    LustSphere = 657,
+
+    // Generated from skill name table entry: Down Shot 2
+    DownShot2 = 658,
+
+    // Generated from skill name table entry: Down Shot 3
+    DownShot3 = 659,
+
+    // Generated from skill name table entry: Down Shot 4
+    DownShot4 = 660,
+
+    // Generated from skill name table entry: Electro Attack
+    ElectroAttack = 661,
+
+    // Generated from skill name table entry: Sinful Shell
+    SinfulShell = 662,
+
+    // Generated from skill name table entry: Follow Black
+    FollowBlack = 663,
+
+    // Generated from skill name table entry: Summon
+    Summon2 = 664,
+
+    // Generated from skill name table entry: Madara-Megido
+    MadaraMegido = 665,
+
+    // Generated from skill name table entry: Curry Raku
+    CurryRaku = 666,
+
+    // Generated from skill name table entry: Enemy Benefit
+    EnemyBenefit = 667,
+
+    // Generated from skill name table entry: Diarahan
+    Diarahan2 = 668,
+
+    // Generated from skill name table entry: Curry Suku
+    CurrySuku = 669,
+
+    // Generated from skill name table entry: Decoy Ball
+    DecoyBall = 670,
+
+    // Generated from skill name table entry: Super Decoy Ball
+    SuperDecoyBall = 671,
+
+    // Generated from skill name table entry: Metabolic Wave
+    MetabolicWave = 672,
+
+    // Generated from skill name table entry: Laevateinn
+    Laevateinn_EngineRoom = 673,
+
+    // Generated from skill name table entry: Desperation
+    Desperation = 674,
+
+    // Generated from skill name table entry: Call of Chaos
+    CallofChaos = 675,
+
+    // Generated from skill name table entry: Big Bang Challenge
+    BigBangChallenge = 676,
+
+    // Generated from skill name table entry: Grail Light 2
+    GrailLight = 677,
+
+    // Generated from skill name table entry: Megidola
+    Megidola_Leviathan = 678,
+
+    // Generated from skill name table entry: Rage Transmission
+    RageTransmission = 679,
+
+    // Generated from skill name table entry: Hundred Slaps
+    HundredSlaps = 680,
+
+    // Generated from skill name table entry: Distorted Pride
+    DistortedPride = 681,
+
+    // Generated from skill name table entry: Divine Punishment
+    DivinePunishment = 682,
+
+    // Generated from skill name table entry: Will of the People
+    WillofthePeople2 = 683,
+
+    // Generated from skill name table entry: Wind Cutter
+    WindCutter = 684,
+
+    // Generated from skill name table entry: Shoot Up
+    ShootUp = 685,
+
+    // Generated from skill name table entry: Executive Punch
+    ExecutivePunch = 686,
+
+    // Generated from skill name table entry: Megidolaon
+    Megidolaon_ShadowFuwa = 687,
+
+    // Generated from skill name table entry: Vorpal Blade
+    VorpalBlade2 = 688,
+
+    // Generated from skill name table entry: Megidolaon
+    Megidolaon_Unused = 689,
+
+    // Generated from skill name table entry: Big Bang Burger
+    BigBangBurger = 690,
+
+    // Generated from skill name table entry: Earth Burger
+    EarthBurger = 691,
+
+    // Generated from skill name table entry: Mars Burger
+    MarsBurger = 692,
+
+    // Generated from skill name table entry: Moon Burger
+    MoonBurger = 693,
+
+    // Generated from skill name table entry: Saturn Burger
+    SaturnBurger = 694,
+
+    // Generated from skill name table entry: Justine Attack
+    JustineAttack = 695,
+
+    // Generated from skill name table entry: Caroline Attack
+    CarolineAttack = 696,
+
+    // Generated from skill name table entry: Curry Makara
+    CurryMakara = 697,
+
+    // Generated from skill name table entry: Curry Tetra
+    CurryTetra = 698,
+
+    // Generated from skill name table entry: Curry Endure
+    CurryEndure = 699,
+
+    // Generated from skill name table entry: Curry Charge
+    CurryCharge = 700,
+
+    // Generated from skill name table entry: Curry Concentrate
+    CurryConcentrate = 701,
+
+    // Generated from skill name table entry: Curry Heat Riser
+    CurryHeatRiser = 702,
+
+    // Generated from skill name table entry: Magic Wall
+    MagicWall = 703,
+
+    // Generated from skill name table entry: Cadenza
+    Cadenza = 704,
+
+    // Generated from skill name table entry: Cross Slash
+    CrossSlash = 705,
+
+    // Generated from skill name table entry: Door of Hades
+    DoorofHades = 706,
+
+    // Generated from skill name table entry: Magatsu Mandala
+    MagatsuMandala = 707,
+
+    // Generated from skill name table entry: Shining Arrows
+    ShiningArrows = 708,
+
+    // Generated from skill name table entry: Beast Weaver
+    BeastWeaver = 709,
+
+    // Generated from skill name table entry: Titanomachia
+    Titanomachia = 710,
+
+    // Generated from skill name table entry: Abyssal Wings
+    AbyssalWings = 711,
+
+    // Generated from skill name table entry: Oratario
+    Oratario = 712,
+
+    // Generated from skill name table entry: Myriad Truths
+    MyriadTruths = 713,
+
+    // Generated from skill name table entry: Neo Cadenza
+    NeoCadenza = 714,
+
+    // Generated from skill name table entry: Akasha Arts
+    AkashaArts = 715,
+
+    // Generated from skill name table entry: Phantom Show
+    PhantomShow = 716,
+
+    // Generated from skill name table entry: Confuse Ball
+    ConfuseBall = 717,
+
+    // Generated from skill name table entry: Baptism Ball
+    BaptismBall = 718,
+
+    // Generated from skill name table entry: Exorcism Ball
+    ExorcismBall = 719,
+
+    // Generated from skill name table entry: Megido
+    Megido_UnusedHalveHp = 720,
+
+    // Generated from skill name table entry: Megidola
+    Megidola_UnusedHalveHp = 721,
+
+    // Generated from skill name table entry: Megidolaon
+    Megidolaon_UnusedHalveHp = 722,
+
+    // Generated from skill name table entry: Slam
+    Slam = 723,
+
+    // Generated from skill name table entry: Megaton Raid
+    MegatonRaid_TwinsScriptedLoss = 724,
+
+    // Generated from skill name table entry: One-shot Kill
+    OneshotKill_TwinsScriptedLoss = 725,
+
+    // Generated from skill name table entry: Inferno
+    Inferno_TwinsScriptedLoss = 726,
+
+    // Generated from skill name table entry: Diamond Dust
+    DiamondDust_TwinsScriptedLoss = 727,
+
+    // Generated from skill name table entry: Eternal Radiance
+    EternalRadiance = 728,
+
+    // Generated from skill name table entry: Tyrant Chaos
+    TyrantChaos = 729,
+
+    // Generated from skill name table entry: New Curry 1
+    NewCurry1 = 730,
+
+    // Generated from skill name table entry: New Curry 2
+    NewCurry2 = 731,
+
+    // Generated from skill name table entry: Reviv-All
+    RevivAll = 732,
+
+    // Generated from skill name table entry: Reviv-All Z
+    RevivAllZ = 733,
+
+    // Generated from skill name table entry: Dark Akechi-For pursuing
+    DarkAkechiForpursuing = 734,
+
+    // Generated from skill name table entry: Dark Akechi-For Gun pursuing
+    DarkAkechiForGunpursuing = 735,
+
+    // Generated from skill name table entry: Wild Talk
+    WildTalk = 736,
+
+    // Generated from skill name table entry: Baton Pass
+    BatonPass = 737,
+
+    // Generated from skill name table entry: Punk Talk
+    PunkTalk = 738,
+
+    // Generated from skill name table entry: Pickpocket
+    Pickpocket = 739,
+
+    // Generated from skill name table entry: Harisen Recovery
+    HarisenRecovery = 740,
+
+    // Generated from skill name table entry: Protect
+    Protect = 741,
+
+    // Generated from skill name table entry: Girl Talk
+    GirlTalk = 742,
+
+    // Generated from skill name table entry: Crocodile Tears
+    CrocodileTears = 743,
+
+    // Generated from skill name table entry: Sexy Technique
+    SexyTechnique = 744,
+
+    // Generated from skill name table entry: Detective Talk
+    SmoothTalk = 745,
+
+    // Generated from skill name table entry: Artist Talk
+    ArtTalk = 746,
+
+    // Generated from skill name table entry: Negotiating
+    Diplomacy = 747,
+
+    // Generated from skill name table entry: Fundraising
+    Fundraising = 748,
+
+    // Generated from skill name table entry: Manipulation
+    Manipulation = 749,
+
+    // Generated from skill name table entry: Mind Control
+    MindControl = 750,
+
+    // Generated from skill name table entry: Charisma Speech
+    CharismaSpeech = 751,
+
+    // Generated from skill name table entry: Brainiac Talk
+    BlackBeltTalk = 752,
+
+    // Generated from skill name table entry: Sabaki
+    KomaSabaki = 753,
+
+    // Generated from skill name table entry: Kakoi Kuzushi
+    KakoiKuzushi = 754,
+
+    // Generated from skill name table entry: Touryou
+    Touryou = 755,
+
+    // Generated from skill name table entry: Togo System
+    TogoSystem = 756,
+
+    // Generated from skill name table entry: Bullet Hail
+    BulletHail = 757,
+
+    // Generated from skill name table entry: Warning Shot
+    WarningShot = 758,
+
+    // Generated from skill name table entry: Celeb Talk
+    CelebTalk = 759,
+
+    // Generated from skill name table entry: Kitty Talk
+    KittyTalk = 760,
+
+    // Generated from skill name table entry: Marin Karin
+    MarinKarin_ShadowAino = 761,
+
+    // Generated from skill name table entry: Womanizing
+    Womanizing = 762,
+
+    // Generated from skill name table entry: Indignant Revenge
+    IndignantRevenge = 763,
+
+    // Generated from skill name table entry: Healing Power
+    HealingPower = 764,
+
+    // Generated from skill name table entry: Healing Power
+    HealingPower2 = 765,
+
+    // Generated from skill name table entry: Taunt
+    Taunt2 = 766,
+
+    // Generated from skill name table entry: Iridescent Change
+    IridescentChange = 767,
+
+    // Generated from skill name table entry: Brave Blade
+    BraveBlade2 = 768,
+
+    // Generated from skill name table entry: Assault Dive
+    AssaultDive2 = 769,
+
+    // Generated from skill name table entry: Terror Claw
+    TerrorClaw2 = 770,
+
+    // Generated from skill name table entry: Bufudyne
+    Bufudyne2 = 771,
+
+    // Generated from skill name table entry: Psiodyne
+    Psiodyne2 = 772,
+
+    // Generated from skill name table entry: Mazionga
+    Mazionga2 = 773,
+
+    // Generated from skill name table entry: Maziodyne
+    Maziodyne2 = 774,
+
+    // Generated from skill name table entry: Maeiga
+    Maeiga3 = 775,
+
+    // Generated from skill name table entry: Maeigaon
+    Maeigaon2 = 776,
+
+    // Generated from skill name table entry: Adam Skill 5
+    AdamSkill5 = 777,
+
+    // Generated from skill name table entry: Adam Skill 6
+    AdamSkill6 = 778,
+
+    // Generated from skill name table entry: Vorpal Blade
+    VorpalBlade3 = 779,
+
+    // Generated from skill name table entry: MonaRyuji Unison Attack
+    MonaRyujiUnisonAttack = 780,
+
+    // Generated from skill name table entry: MonaAnn Unison Attack
+    MonaAnnUnisonAttack = 781,
+
+    // Generated from skill name table entry: MonaHaru Unison Attack
+    MonaHaruUnisonAttack = 782,
+
+    // Generated from skill name table entry: YusukeAnn Unison Attack
+    YusukeAnnUnisonAttack = 783,
+
+    // Generated from skill name table entry: RyujiYusuke Unison Attack
+    RyujiYusukeUnisonAttack = 784,
+
+    // Generated from skill name table entry: RyujiMakoto Unison Attack
+    RyujiMakotoUnisonAttack = 785,
+
+    // Generated from skill name table entry: ProtagAkechi Unison Attack
+    ProtagAkechiUnisonAttack = 786,
+
+    // Generated from skill name table entry: MakotoHaru Unison Attack
+    MakotoHaruUnisonAttack = 787,
+
+    // Generated from skill name table entry: Akechi Unison Attack
+    UnusedAkechiUnisonAttack = 788,
+
+    // Generated from skill name table entry: ProtagKasumi Unison Attack
+    ProtagKasumiUnisonAttack = 789,
+
+    // Generated from skill name table entry: MonaRyuji Unison Attack
+    MonaRyujiUnisonAttack2 = 790,
+
+    // Generated from skill name table entry: MonaAnn Unison Attack
+    MonaAnnUnisonAttack2 = 791,
+
+    // Generated from skill name table entry: MonaHaru Unison Attack
+    MonaHaruUnisonAttack2 = 792,
+
+    // Generated from skill name table entry: YusukeAnn Unison Attack
+    YusukeAnnUnisonAttack2 = 793,
+
+    // Generated from skill name table entry: RyujiYusuke Unison Attack
+    RyujiYusukeUnisonAttack2 = 794,
+
+    // Generated from skill name table entry: RyujiMakoto Unison Attack
+    RyujiMakotoUnisonAttack2 = 795,
+
+    // Generated from skill name table entry: ProtagAkechi Unison Attack
+    ProtagAkechiUnisonAttack2 = 796,
+
+    // Generated from skill name table entry: MakotoHaru Unison Attack
+    MakotoHaruUnisonAttack2 = 797,
+
+    // Generated from skill name table entry: Akechi Unison Attack
+    UnusedAkechiUnisonAttack2 = 798,
+
+    // Generated from skill name table entry: ProtagKasumi Unison Attack
+    ProtagKasumiUnisonAttack2 = 799,
+
+    // Generated from skill name table entry: Counter
+    Counter = 800,
+
+    // Generated from skill name table entry: Counterstrike
+    Counterstrike = 801,
+
+    // Generated from skill name table entry: High Counter
+    HighCounter = 802,
+
+    // Generated from skill name table entry: Resist Burn
+    ResistBurn = 803,
+
+    // Generated from skill name table entry: Null Burn
+    NullBurn = 804,
+
+    // Generated from skill name table entry: Endure
+    Endure = 805,
+
+    // Generated from skill name table entry: Enduring Soul
+    EnduringSoul = 806,
+
+    // Generated from skill name table entry: Resist Freeze
+    ResistFreeze = 807,
+
+    // Generated from skill name table entry: Null Freeze
+    NullFreeze = 808,
+
+    // Generated from skill name table entry: Survival Trick
+    SurvivalTrick = 809,
+
+    // Generated from skill name table entry: Dodge Fire
+    DodgeFire = 810,
+
+    // Generated from skill name table entry: Evade Fire
+    EvadeFire = 811,
+
+    // Generated from skill name table entry: Dodge Ice
+    DodgeIce = 812,
+
+    // Generated from skill name table entry: Evade Ice
+    EvadeIce = 813,
+
+    // Generated from skill name table entry: Dodge Wind
+    DodgeWind = 814,
+
+    // Generated from skill name table entry: Evade Wind
+    EvadeWind = 815,
+
+    // Generated from skill name table entry: Dodge Elec
+    DodgeElec = 816,
+
+    // Generated from skill name table entry: Evade Elec
+    EvadeElec = 817,
+
+    // Generated from skill name table entry: Dodge Phys
+    DodgePhys = 818,
+
+    // Generated from skill name table entry: Evade Phys
+    EvadePhys = 819,
+
+    // Generated from skill name table entry: Fire Boost
+    FireBoost = 820,
+
+    // Generated from skill name table entry: Fire Amp
+    FireAmp = 821,
+
+    // Generated from skill name table entry: Ice Boost
+    IceBoost = 822,
+
+    // Generated from skill name table entry: Ice Amp
+    IceAmp = 823,
+
+    // Generated from skill name table entry: Wind Boost
+    WindBoost = 824,
+
+    // Generated from skill name table entry: Wind Amp
+    WindAmp = 825,
+
+    // Generated from skill name table entry: Elec Boost
+    ElecBoost = 826,
+
+    // Generated from skill name table entry: Elec Amp
+    ElecAmp = 827,
+
+    // Generated from skill name table entry: Angelic Grace
+    AngelicGrace = 828,
+
+    // Generated from skill name table entry: Divine Grace
+    DivineGrace = 829,
+
+    // Generated from skill name table entry: Regenerate 1
+    Regenerate1 = 830,
+
+    // Generated from skill name table entry: Regenerate 2
+    Regenerate2 = 831,
+
+    // Generated from skill name table entry: Regenerate 3
+    Regenerate3 = 832,
+
+    // Generated from skill name table entry: Dodge Bless
+    DodgeBless = 833,
+
+    // Generated from skill name table entry: Dodge Curse
+    DodgeCurse = 834,
+
+    // Generated from skill name table entry: Invigorate 1
+    Invigorate1 = 835,
+
+    // Generated from skill name table entry: Invigorate 2
+    Invigorate2 = 836,
+
+    // Generated from skill name table entry: Invigorate 3
+    Invigorate3 = 837,
+
+    // Generated from skill name table entry: Evade Bless
+    EvadeBless = 838,
+
+    // Generated from skill name table entry: Evade Curse
+    EvadeCurse = 839,
+
+    // Generated from skill name table entry: Attack Master
+    AttackMaster = 840,
+
+    // Generated from skill name table entry: Auto-Mataru
+    AutoMataru = 841,
+
+    // Generated from skill name table entry: Resist Shock
+    ResistShock = 842,
+
+    // Generated from skill name table entry: Defense Master
+    DefenseMaster = 843,
+
+    // Generated from skill name table entry: Auto-Maraku
+    AutoMaraku = 844,
+
+    // Generated from skill name table entry: Null Shock
+    NullShock = 845,
+
+    // Generated from skill name table entry: Speed Master
+    SpeedMaster = 846,
+
+    // Generated from skill name table entry: Auto-Masuku
+    AutoMasuku = 847,
+
+    // Generated from skill name table entry: Resist Hunger
+    ResistHunger = 848,
+
+    // Generated from skill name table entry: Null Hunger
+    NullHunger = 849,
+
+    // Generated from skill name table entry: Fast Heal
+    FastHeal = 850,
+
+    // Generated from skill name table entry: Insta-Heal
+    InstaHeal = 851,
+
+    // Generated from skill name table entry: Arms Master
+    ArmsMaster = 852,
+
+    // Generated from skill name table entry: Spell Master
+    SpellMaster = 853,
+
+    // Generated from skill name table entry: Rage Attack Up
+    RageAttackUp = 854,
+
+    // Generated from skill name table entry: Sharp Student
+    SharpStudent = 855,
+
+    // Generated from skill name table entry: Apt Pupil
+    AptPupil = 856,
+
+    // Generated from skill name table entry: Ali Dance
+    AliDance = 857,
+
+    // Generated from skill name table entry: Firm Stance
+    FirmStance = 858,
+
+    // Generated from skill name table entry: Plus 50% EXP
+    Plus50EXP = 859,
+
+    // Generated from skill name table entry: Life Aid
+    LifeAid = 860,
+
+    // Generated from skill name table entry: Victory Cry
+    VictoryCry = 861,
+
+    // Generated from skill name table entry: Growth 1
+    Growth1 = 862,
+
+    // Generated from skill name table entry: Growth 2
+    Growth2 = 863,
+
+    // Generated from skill name table entry: Growth 3
+    Growth3 = 864,
+
+    // Generated from skill name table entry: Unshaken Will
+    UnshakenWill = 865,
+
+    // Generated from skill name table entry: Null Bless Insta Kill
+    NullBlessInstaKill = 866,
+
+    // Generated from skill name table entry: Baton Pass
+    UnusedBatonPass2 = 867,
+
+    // Generated from skill name table entry: Soul Touch
+    SoulTouch_Unused = 868,
+
+    // Generated from skill name table entry: Kakoi Kuzushi
+    UnusedKakoiKuzushi2 = 869,
+
+    // Generated from skill name table entry: Resist Fire
+    ResistFire = 870,
+
+    // Generated from skill name table entry: Null Fire
+    NullFire = 871,
+
+    // Generated from skill name table entry: Repel Fire
+    RepelFire = 872,
+
+    // Generated from skill name table entry: Drain Fire
+    DrainFire = 873,
+
+    // Generated from skill name table entry: Null Curse Insta Kill
+    NullCurseInstaKill = 874,
+
+    // Generated from skill name table entry: Resist Ice
+    ResistIce = 875,
+
+    // Generated from skill name table entry: Null Ice
+    NullIce = 876,
+
+    // Generated from skill name table entry: Repel Ice
+    RepelIce = 877,
+
+    // Generated from skill name table entry: Drain Ice
+    DrainIce = 878,
+
+    // Generated from skill name table entry: Plus 15% EXP
+    Plus15EXP = 879,
+
+    // Generated from skill name table entry: Resist Wind
+    ResistWind = 880,
+
+    // Generated from skill name table entry: Null Wind
+    NullWind = 881,
+
+    // Generated from skill name table entry: Repel Wind
+    RepelWind = 882,
+
+    // Generated from skill name table entry: Drain Wind
+    DrainWind = 883,
+
+    // Generated from skill name table entry: All Out Attack Boost
+    AllOutAttackBoost = 884,
+
+    // Generated from skill name table entry: Resist Elec
+    ResistElec = 885,
+
+    // Generated from skill name table entry: Null Elec
+    NullElec = 886,
+
+    // Generated from skill name table entry: Repel Elec
+    RepelElec = 887,
+
+    // Generated from skill name table entry: Drain Elec
+    DrainElec = 888,
+
+    // Generated from skill name table entry: Money Boost
+    MoneyBoost = 889,
+
+    // Generated from skill name table entry: Resist Bless
+    ResistBless = 890,
+
+    // Generated from skill name table entry: Null Bless
+    NullBless = 891,
+
+    // Generated from skill name table entry: Repel Bless
+    RepelBless = 892,
+
+    // Generated from skill name table entry: Drain Bless
+    DrainBless = 893,
+
+    // Generated from skill name table entry: Hide
+    Hide = 894,
+
+    // Generated from skill name table entry: Resist Curse
+    ResistCurse = 895,
+
+    // Generated from skill name table entry: Null Curse
+    NullCurse = 896,
+
+    // Generated from skill name table entry: Repel Curse
+    RepelCurse = 897,
+
+    // Generated from skill name table entry: Drain Curse
+    DrainCurse = 898,
+
+    // Generated from skill name table entry: Life Boost
+    LifeBoost = 899,
+
+    // Generated from skill name table entry: Resist Phys
+    ResistPhys = 900,
+
+    // Generated from skill name table entry: Null Phys
+    NullPhys = 901,
+
+    // Generated from skill name table entry: Repel Phys
+    RepelPhys = 902,
+
+    // Generated from skill name table entry: Drain Phys
+    DrainPhys = 903,
+
+    // Generated from skill name table entry: Null Bless Curse
+    NullBlessCurse = 904,
+
+    // Generated from skill name table entry: Ailment Boost
+    AilmentBoost = 905,
+
+    // Generated from skill name table entry: Hama Boost
+    HamaBoost = 906,
+
+    // Generated from skill name table entry: Mudo Boost
+    MudoBoost = 907,
+
+    // Generated from skill name table entry: Gun Accuracy Plus 5%
+    GunAccuracyPlus5 = 908,
+
+    // Generated from skill name table entry: Samurai Spirit
+    SamuraiSpirit = 909,
+
+    // Generated from skill name table entry: Dizzy Boost
+    DizzyBoost = 910,
+
+    // Generated from skill name table entry: Confuse Boost
+    ConfuseBoost = 911,
+
+    // Generated from skill name table entry: Fear Boost
+    FearBoost = 912,
+
+    // Generated from skill name table entry: Forget Boost
+    ForgetBoost = 913,
+
+    // Generated from skill name table entry: Sleep Boost
+    SleepBoost = 914,
+
+    // Generated from skill name table entry: Rage Boost
+    RageBoost = 915,
+
+    // Generated from skill name table entry: Despair Boost
+    DespairBoost = 916,
+
+    // Generated from skill name table entry: Kuzunoha Emblem
+    KuzunohaEmblem = 917,
+
+    // Generated from skill name table entry: Brainwash Boost
+    BrainwashBoost = 918,
+
+    // Generated from skill name table entry: Critical Rate Up (High)
+    CriticalRateUpHigh = 919,
+
+    // Generated from skill name table entry: Resist Dizzy
+    ResistDizzy = 920,
+
+    // Generated from skill name table entry: Resist Confuse
+    ResistConfuse = 921,
+
+    // Generated from skill name table entry: Resist Fear
+    ResistFear = 922,
+
+    // Generated from skill name table entry: Resist Forget
+    ResistForget = 923,
+
+    // Generated from skill name table entry: Resist Sleep
+    ResistSleep = 924,
+
+    // Generated from skill name table entry: Resist Rage
+    ResistRage = 925,
+
+    // Generated from skill name table entry: Resist Despair
+    ResistDespair = 926,
+
+    // Generated from skill name table entry: Fusion Accident Up
+    FusionAccidentUp = 927,
+
+    // Generated from skill name table entry: Resist Brainwash
+    ResistBrainwash = 928,
+
+    // Generated from skill name table entry: Tyrants Mind
+    TyrantsMind = 929,
+
+    // Generated from skill name table entry: Null Dizzy
+    NullDizzy = 930,
+
+    // Generated from skill name table entry: Null Confuse
+    NullConfuse = 931,
+
+    // Generated from skill name table entry: Null Fear
+    NullFear = 932,
+
+    // Generated from skill name table entry: Null Forget
+    NullForget = 933,
+
+    // Generated from skill name table entry: Null Sleep
+    NullSleep = 934,
+
+    // Generated from skill name table entry: Null Rage
+    NullRage = 935,
+
+    // Generated from skill name table entry: Null Despair
+    NullDespair = 936,
+
+    // Generated from skill name table entry: Holy Whisper
+    HolyWhisper = 937,
+
+    // Generated from skill name table entry: Null Brainwash
+    NullBrainwash = 938,
+
+    // Generated from skill name table entry: HolyEmbrace
+    HolyEmbrace = 939,
+
+    // Generated from skill name table entry: Burn Boost
+    BurnBoost = 940,
+
+    // Generated from skill name table entry: Freeze Boost
+    FreezeBoost = 941,
+
+    // Generated from skill name table entry: Shock Boost
+    ShockBoost = 942,
+
+    // Generated from skill name table entry: BLANK
+    BLANK15 = 943,
+
+    // Generated from skill name table entry: Fortified Moxy
+    FortifiedMoxy = 944,
+
+    // Generated from skill name table entry: Adverse Resolve
+    AdverseResolve = 945,
+
+    // Generated from skill name table entry: Last Stand
+    LastStand = 946,
+
+    // Generated from skill name table entry: Heat Up
+    HeatUp = 947,
+
+    // Generated from skill name table entry: BLANK
+    BLANK16 = 948,
+
+    // Generated from skill name table entry: Touch n' Go
+    TouchnGo = 949,
+
+    // Generated from skill name table entry: Climate Decorum
+    ClimateDecorum = 950,
+
+    // Generated from skill name table entry: Ambient Aid
+    AmbientAid = 951,
+
+    // Generated from skill name table entry: RESERVE
+    RESERVE = 952,
+
+    // Generated from skill name table entry: Snipe
+    Snipe = 953,
+
+    // Generated from skill name table entry: Cripple
+    Cripple = 954,
+
+    // Generated from skill name table entry: Trigger Happy
+    TriggerHappy = 955,
+
+    // Generated from skill name table entry: Resist Nuke
+    ResistNuke = 956,
+
+    // Generated from skill name table entry: Null Nuke
+    NullNuke = 957,
+
+    // Generated from skill name table entry: Repel Nuke
+    RepelNuke = 958,
+
+    // Generated from skill name table entry: Drain Nuke
+    DrainNuke = 959,
+
+    // Generated from skill name table entry: RESERVE
+    RESERVE2 = 960,
+
+    // Generated from skill name table entry: Resist Psy
+    ResistPsy = 961,
+
+    // Generated from skill name table entry: Null Psy
+    NullPsy = 962,
+
+    // Generated from skill name table entry: Repel Psy
+    RepelPsy = 963,
+
+    // Generated from skill name table entry: Drain Psy
+    DrainPsy = 964,
+
+    // Generated from skill name table entry: RESERVE
+    RESERVE3 = 965,
+
+    // Generated from skill name table entry: Nuke Boost
+    NukeBoost = 966,
+
+    // Generated from skill name table entry: Nuke Amp
+    NukeAmp = 967,
+
+    // Generated from skill name table entry: RESERVE
+    RESERVE4 = 968,
+
+    // Generated from skill name table entry: Psy Boost
+    PsyBoost = 969,
+
+    // Generated from skill name table entry: Psy Amp
+    PsyAmp = 970,
+
+    // Generated from skill name table entry: Sexy Technique
+    SexyTechnique2 = 971,
+
+    // Generated from skill name table entry: Dodge Nuke
+    DodgeNuke = 972,
+
+    // Generated from skill name table entry: Evade Nuke
+    EvadeNuke = 973,
+
+    // Generated from skill name table entry: Detox
+    DetoxX = 974,
+
+    // Generated from skill name table entry: Dodge Psy
+    DodgePsy = 975,
+
+    // Generated from skill name table entry: Evade Psy
+    EvadePsy = 976,
+
+    // Generated from skill name table entry: Detox
+    DetoxDX = 977,
+
+    // Generated from skill name table entry: Bless Boost
+    BlessBoost = 978,
+
+    // Generated from skill name table entry: Bless Amp
+    BlessAmp = 979,
+
+    // Generated from skill name table entry: RESERVE
+    RESERVE5 = 980,
+
+    // Generated from skill name table entry: Curse Boost
+    CurseBoost = 981,
+
+    // Generated from skill name table entry: Curse Amp
+    CurseAmp = 982,
+
+    // Generated from skill name table entry: Not Found By Enemy
+    NotFoundByEnemy = 983,
+
+    // Generated from skill name table entry: Magic Ability
+    MagicAbility = 984,
+
+    // Generated from skill name table entry: Fortify Spirit
+    FortifySpirit = 985,
+
+    // Generated from skill name table entry: Almighty Boost
+    AlmightyBoost = 986,
+
+    // Generated from skill name table entry: Almighty Amp
+    AlmightyAmp = 987,
+
+    // Generated from skill name table entry: Zenith Defense
+    ZenithDefense = 988,
+
+    // Generated from skill name table entry: Soul Chain
+    SoulChain = 989,
+
+    // Generated from skill name table entry: Vanity Copy
+    VanityCopy = 990,
+
+    // Generated from skill name table entry: Gluttonous Snuff
+    GluttonousSnuff = 991,
+
+    // Generated from skill name table entry: Sloth Defense
+    SlothDefense = 992,
+
+    // Generated from skill name table entry: Brush Of Vanity
+    BrushOfVanity = 993,
+
+    // Generated from skill name table entry: Life Rise
+    LifeRise = 994,
+
+    // Generated from skill name table entry: Mana Rise
+    ManaRise = 995,
+
+    // Generated from skill name table entry: Soul Touch
+    SoulTouch2 = 996,
+
+    // Generated from skill name table entry: Victory Cry
+    VictoryCry2 = 997,
+
+    // Generated from skill name table entry: Trait DLC For Bitedown
+    TraitDLCForBitedown = 998,
+
+    // Generated from skill name table entry: BLANK
+    BLANK17 = 999,
+
+    // Generated from skill name table entry: Ailment Effect Up
+    AilmentEffectUp = 1000,
+
+    // Generated from skill name table entry: Ailment Effect Up +
+    AilmentEffectUpPlus = 1001,
+
+    // Generated from skill name table entry: Instakill SP Heal Low
+    InstakillSPHealLow = 1002,
+
+    // Generated from skill name table entry: Instakill SP Heal Mid
+    InstakillSPHealMid = 1003,
+
+    // Generated from skill name table entry: Instakill SP Heal High
+    InstakillSPHealHigh = 1004,
+
+    // Generated from skill name table entry: Technical Effect Up
+    TechnicalEffectUp = 1005,
+
+    // Generated from skill name table entry: Technical Effect Up +
+    TechnicalEffectUpPlus = 1006,
+
+    // Generated from skill name table entry: Low HP Attack Up
+    LowHPAttackUp = 1007,
+
+    // Generated from skill name table entry: Low HP Attack Up +
+    LowHPAttackUpPlus = 1008,
+
+    // Generated from skill name table entry: WEAK Hit Effect Up
+    WEAKHitEffectUp = 1009,
+
+    // Generated from skill name table entry: WEAK Hit Effect Up +
+    WEAKHitEffectUpPlus = 1010,
+
+    // Generated from skill name table entry: Null Insta Kill
+    NullInstaKill = 1011,
+
+    // Generated from skill name table entry: HP Cost Down 10%
+    HPCostDown10 = 1012,
+
+    // Generated from skill name table entry: HP Cost Down 25%
+    HPCostDown25 = 1013,
+
+    // Generated from skill name table entry: SP Cost Down 10%
+    SPCostDown10 = 1014,
+
+    // Generated from skill name table entry: SP Cost Down 25%
+    SPCostDown25 = 1015,
+
+    // Generated from skill name table entry: Heal Magic Up 10%
+    HealMagicUp10 = 1016,
+
+    // Generated from skill name table entry: Heal Magic Up 25%
+    HealMagicUp25 = 1017,
+
+    // Generated from skill name table entry: Chance of 0 HP Cost
+    Chanceof0HPCost = 1018,
+
+    // Generated from skill name table entry: Chance of 0 SP Cost
+    Chanceof0SPCost = 1019,
+
+    // Generated from skill name table entry: Target ATK Up
+    TargetATKUp = 1020,
+
+    // Generated from skill name table entry: Target ATK Up +
+    TargetATKUpPlus = 1021,
+
+    // Generated from skill name table entry: All Crits, No Evasion
+    AllCritsNoEvasion = 1022,
+
+    // Generated from skill name table entry: Heal Cost Down 25%
+    HealCostDown25 = 1023,
+
+    // Generated from skill name table entry: Heal Cost Down 10%
+    HealCostDown10 = 1024,
+
+    // Generated from skill name table entry: ATK Up, Aim Down
+    ATKUpAimDown = 1025,
+
+    // Generated from skill name table entry: Ailment Success Up
+    AilmentSuccessUp = 1026,
+
+    // Generated from skill name table entry: BLANK
+    BLANK18 = 1027,
+
+    // Generated from skill name table entry: 4-Affinity Boost
+    FourAffinityBoost = 1028,
+
+    // Generated from skill name table entry: 3-Affinity Light Boost
+    ThreeAffinityLightBoost = 1029,
+
+    // Generated from skill name table entry: Support Turn Extend
+    SupportTurnExtend = 1030,
+
+    // Generated from skill name table entry: Insta Kill Up
+    InstaKillUp = 1031,
+
+    // Generated from skill name table entry: Insta Kill Up +
+    InstaKillUpPlus = 1032,
+
+    // Generated from skill name table entry: Life Bonus
+    LifeBonus = 1033,
+
+    // Generated from skill name table entry: Life Gain
+    LifeGain = 1034,
+
+    // Generated from skill name table entry: Life Surge
+    LifeSurge = 1035,
+
+    // Generated from skill name table entry: Mana Bonus
+    ManaBonus = 1036,
+
+    // Generated from skill name table entry: Mana Gain
+    ManaGain = 1037,
+
+    // Generated from skill name table entry: Mana Surge
+    ManaSurge = 1038,
+
+    // Generated from skill name table entry: Critical Effect Up
+    CriticalEffectUp = 1039,
+
+    // Generated from skill name table entry: Critical Effect Up +
+    CriticalEffectUpPlus = 1040,
+
+    // Generated from skill name table entry: Hit Damage Doubled
+    HitDamageDoubled = 1041,
+
+    // Generated from skill name table entry: All Target ATK Up
+    AllTargetATKUp = 1042,
+
+    // Generated from skill name table entry: All Target ATK Up +
+    AllTargetATKUpPlus = 1043,
+
+    // Generated from skill name table entry: Auto Barrier
+    AutoBarrier = 1044,
+
+    // Generated from skill name table entry: Backup Support
+    BackupSupport = 1045,
+
+    // Generated from skill name table entry: Absolute Escape
+    AbsoluteEscape = 1046,
+
+    // Generated from skill name table entry: Shield of Loyalty
+    ShieldofLoyalty = 1047,
+
+    // Generated from skill name table entry: All Amp
+    AllAmp = 1048,
+
+    // Generated from skill name table entry: BLANK
+    BLANK19 = 1049,
+
+    // Generated from skill name table entry: BLANK
+    BLANK20 = 1050,
+
+    // Generated from skill name table entry: BLANK
+    BLANK21 = 1051,
+
+    // Generated from skill name table entry: BLANK
+    BLANK22 = 1052,
+
+    // Generated from skill name table entry: BLANK
+    BLANK23 = 1053,
+
+    // Generated from skill name table entry: BLANK
+    BLANK24 = 1054,
+
+    // Generated from skill name table entry: BLANK
+    BLANK25 = 1055,
+
+    // Generated from skill name table entry: BLANK
+    BLANK26 = 1056
+
+};
