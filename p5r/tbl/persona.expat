@@ -1,0 +1,89 @@
+bitfield PersonaFlags {
+	evolved: 1;
+	specialFusion: 1;
+	unknown: 1;
+	cannotBeRegistered: 1;
+	storyPersona: 1;
+	partyPersona: 1;
+	unknown1: 1;
+	unknown2: 1;
+	treasureDemon: 1;
+	dlc: 1;
+	padding: 6;
+}[[bitfield_order(std::core::BitfieldOrder::LeastToMostSignificant, 16)]];
+
+struct StatBlock {
+    u8 st, ma, en, ag, lu;
+};
+
+enum InheritType : u16 {
+    None = 0,
+    Physical = 1,
+    Fire = 2,
+    Ice = 3,
+    Elec = 4,
+    Wind = 5,
+    Bless = 6,
+    Curse = 7,
+    Healing = 8,
+    Ailment = 10,
+    Almighty = 12,
+    RESERVE = 13,
+    Nuke = 14,
+    Psy = 15,
+};
+
+struct PersonaStats {
+	PersonaFlags flags;
+    Arcana arcana;
+    u8 level;
+    StatBlock stats;
+    padding[1];
+    InheritType inheritance;
+    u16 unknown;
+};
+
+enum LearnsetKind : s8 {
+    None,
+    Skill,
+    Trait = 3,
+};
+
+union SkillTraitId {
+    Skill skillId;
+    Trait traitId;
+};
+
+struct LearnsetEntry {
+    u8 levels;
+    LearnsetKind kind;
+    SkillTraitId id;
+};
+
+struct PersonaSkillsAndStatGrowth {
+    StatBlock statGrowthWeights;
+    padding[1];
+    LearnsetEntry learnset[16];
+};
+
+struct PartyLvlUpThresholds {
+    u32 requiredExp[98];
+};
+
+struct PartyPersonas {
+    padding[1];
+    PartyMember partyMember;
+    u8 levelCount;
+    padding[1];
+    LearnsetEntry learnset[32];
+    StatBlock statGains[98];
+};
+
+struct PersonaTblBlock {
+	match (currentBlockIdx) {
+		(0): PersonaStats block[currentBlockSize / 14];
+		(1): PersonaSkillsAndStatGrowth block [currentBlockSize / 70];
+		(2): PartyLvlUpThresholds block[currentBlockSize / 392];
+		(3): PartyPersonas block[currentBlockSize / 622];
+	}
+};

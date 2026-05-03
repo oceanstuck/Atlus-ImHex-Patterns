@@ -9,8 +9,14 @@
 #include <std/string.pat>
 #include <hex/provider.pat>
 
+// enum includes
+#include <atlus/p5r/enums/confidants.expat>
+#include <atlus/p5r/enums/skills.expat>
+#include <atlus/p5r/enums/traits.expat>
+
 // tbl includes
 #include <atlus/p5r/tbl/skill.expat>
+#include <atlus/p5r/tbl/persona.expat>
 
 // globals
 str fileName = hex::prv::get_information("file_name");
@@ -24,6 +30,7 @@ struct tblBlock {
     
     match (std::string::to_upper(fileName)) {
         ("SKILL.TBL"): SkillTblBlock block;
+        ("PERSONA.TBL"): PersonaTblBlock block;
         (_) : u8 block[blockSize];
     }
     

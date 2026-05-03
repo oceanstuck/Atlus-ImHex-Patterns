@@ -1,0 +1,966 @@
+
+
+enum Trait : s16 {
+    // Generated from trait name table entry: No Trait
+    NoTrait = 0,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE148 = 1,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE149 = 2,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE150 = 3,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE151 = 4,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE152 = 5,
+
+    // Generated from trait name table entry: Relentless
+    Relentless = 6,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE153 = 7,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE154 = 8,
+
+    // Generated from trait name table entry: Savior Bloodline
+    SaviorBloodline = 9,
+
+    // Generated from trait name table entry: Grace of Mother
+    GraceOfMother = 10,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE155 = 11,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE156 = 12,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE157 = 13,
+
+    // Generated from trait name table entry: Relief Bloodline
+    ReliefBloodline = 14,
+
+    // Generated from trait name table entry: Ave Maria
+    AveMaria = 15,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE158 = 16,
+
+    // Generated from trait name table entry: Foul Stench
+    FoulStench = 17,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE159 = 18,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE160 = 19,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE161 = 20,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE162 = 21,
+
+    // Generated from trait name table entry: Static Electricity
+    StaticElectricity1 = 22,
+
+    // Generated from trait name table entry: Ghost Nest
+    GhostNest = 23,
+
+    // Generated from trait name table entry: Cold-Blooded
+    ColdBlooded = 24,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE163 = 25,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE164 = 26,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE165 = 27,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE166 = 28,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE167 = 29,
+
+    // Generated from trait name table entry: Allure of Wisdom
+    AllureOfWisdom = 30,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE168 = 31,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE169 = 32,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE170 = 33,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE171 = 34,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE172 = 35,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE173 = 36,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE174 = 37,
+
+    // Generated from trait name table entry: Frenzied Bull
+    FrenziedBull = 38,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE175 = 39,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE176 = 40,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE177 = 41,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE178 = 42,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE179 = 43,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE180 = 44,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE181 = 45,
+
+    // Generated from trait name table entry: Intense Focus
+    IntenseFocus = 46,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE182 = 47,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE183 = 48,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE184 = 49,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE185 = 50,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE186 = 51,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE187 = 52,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE188 = 53,
+
+    // Generated from trait name table entry: Mighty Gaze
+    MightyGaze = 54,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE189 = 55,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE190 = 56,
+
+    // Generated from trait name table entry: Striking Weight
+    StrikingWeight = 57,
+
+    // Generated from trait name table entry: Undying Fury
+    UndyingFury = 58,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE191 = 59,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE192 = 60,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE193 = 61,
+
+    // Generated from trait name table entry: Retaliating Body
+    RetaliatingBody = 62,
+
+    // Generated from trait name table entry: Inviolable Beauty
+    InviolableBeauty = 63,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE194 = 64,
+
+    // Generated from trait name table entry: Pagan Allure
+    PaganAllure = 65,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE195 = 66,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE196 = 67,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE197 = 68,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE198 = 69,
+
+    // Generated from trait name table entry: Rare Antibody
+    RareAntibody = 70,
+
+    // Generated from trait name table entry: Immunity
+    Immunity = 71,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE199 = 72,
+
+    // Generated from trait name table entry: Skillful Combo
+    SkillfulCombo = 73,
+
+    // Generated from trait name table entry: Linked Bloodline
+    LinkedBloodline = 74,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE200 = 75,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE201 = 76,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE202 = 77,
+
+    // Generated from trait name table entry: Foul Odor
+    FoulOdor = 78,
+
+    // Generated from trait name table entry: Thermal Conduct
+    ThermalConduct = 79,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE203 = 80,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE204 = 81,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE205 = 82,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE206 = 83,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE207 = 84,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE208 = 85,
+
+    // Generated from trait name table entry: Pinch Anchor
+    PinchAnchor = 86,
+
+    // Generated from trait name table entry: Vitality of the Tree
+    VitalityOfTheTree = 87,
+
+    // Generated from trait name table entry: Gloomy Child
+    GloomyChild = 88,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE209 = 89,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE210 = 90,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE211 = 91,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE212 = 92,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE213 = 93,
+
+    // Generated from trait name table entry: Sinful Technique
+    SinfulTechnique = 94,
+
+    // Generated from trait name table entry: Universal Law
+    UniversalLaw = 95,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE214 = 96,
+
+    // Generated from trait name table entry: Ailment Hunter
+    AilmentHunter = 97,
+
+    // Generated from trait name table entry: Hollow Jester
+    HollowJester = 98,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE215 = 99,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE216 = 100,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE217 = 101,
+
+    // Generated from trait name table entry: Deathly Illness
+    DeathlyIllness = 102,
+
+    // Generated from trait name table entry: Omen
+    Omen = 103,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE218 = 104,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE219 = 105,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE220 = 106,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE221 = 107,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE222 = 108,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE223 = 109,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE224 = 110,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE225 = 111,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE226 = 112,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE227 = 113,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE228 = 114,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE229 = 115,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE230 = 116,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE231 = 117,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE232 = 118,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE233 = 119,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE234 = 120,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE235 = 121,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE236 = 122,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE237 = 123,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE238 = 124,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE239 = 125,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE240 = 126,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE241 = 127,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE242 = 128,
+
+    // Generated from trait name table entry: Explosive Scheme
+    ExplosiveScheme = 129,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE243 = 130,
+
+    // Generated from trait name table entry: Infinite Scheme
+    InfiniteScheme = 131,
+
+    // Generated from trait name table entry: Raging Temper
+    RagingTemper = 132,
+
+    // Generated from trait name table entry: Eccentric Temper
+    EccentricTemper = 133,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE244 = 134,
+
+    // Generated from trait name table entry: Proud Presence
+    ProudPresence = 135,
+
+    // Generated from trait name table entry: Magestic Presence
+    MajesticPresence = 136,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE245 = 137,
+
+    // Generated from trait name table entry: Mastery of Magic
+    MasteryOfMagic = 138,
+
+    // Generated from trait name table entry: Pinnacle of Magic
+    PinnacleOfMagic = 139,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE246 = 140,
+
+    // Generated from trait name table entry: Scoundrel Eyes
+    ScoundrelEyes = 141,
+
+    // Generated from trait name table entry: Unparalleled Eyes
+    UnparalleledEyes = 142,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE247 = 143,
+
+    // Generated from trait name table entry: Gaia Pact
+    GaiaPact = 144,
+
+    // Generated from trait name table entry: Gaia Blessing
+    GaiaBlessing = 145,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE248 = 146,
+
+    // Generated from trait name table entry: Icy Glare
+    IcyGlare = 147,
+
+    // Generated from trait name table entry: Cool Customer
+    CoolCustomer = 148,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE249 = 149,
+
+    // Generated from trait name table entry: Tactical Spirit
+    TacticalSpirit = 150,
+
+    // Generated from trait name table entry: Ingenious Spirit
+    IngeniousSpirit = 151,
+
+    // Generated from trait name table entry: Flawless Spirit
+    FlawlessSpirit = 152,
+
+    // Generated from trait name table entry: Veil of Midnight
+    VeilOfMidnight = 153,
+
+    // Generated from trait name table entry: Veil of Sunrise
+    VeilOfSunrise = 154,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE250 = 155,
+
+    // Generated from trait name table entry: Heated Bloodline
+    HeatedBloodline = 156,
+
+    // Generated from trait name table entry: Drunken Passion
+    DrunkenPassion = 157,
+
+    // Generated from trait name table entry: Frigid Bloodline
+    FrigidBloodline = 158,
+
+    // Generated from trait name table entry: Cocytus
+    Cocytus = 159,
+
+    // Generated from trait name table entry: Electric Bloodline
+    ElectricBloodline = 160,
+
+    // Generated from trait name table entry: Bargain Bolts
+    BargainBolts = 161,
+
+    // Generated from trait name table entry: Wind Bloodline
+    WindBloodline = 162,
+
+    // Generated from trait name table entry: Vahana's Wings
+    VahanasWings = 163,
+
+    // Generated from trait name table entry: Psychic Bloodline
+    PsychicBloodline = 164,
+
+    // Generated from trait name table entry: Chi You's Blessing
+    ChiYousBlessing = 165,
+
+    // Generated from trait name table entry: Atomic Bloodline
+    AtomicBloodline = 166,
+
+    // Generated from trait name table entry: Atomic Hellscape
+    AtomicHellscape = 167,
+
+    // Generated from trait name table entry: Bless Bloodline
+    BlessBloodline = 168,
+
+    // Generated from trait name table entry: Martyr's Gift
+    MartyrsGift = 169,
+
+    // Generated from trait name table entry: Cursed Bloodline
+    CursedBloodline = 170,
+
+    // Generated from trait name table entry: Mother's Lament
+    MothersLament = 171,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE251 = 172,
+
+    // Generated from trait name table entry: Gluttonmouth
+    Gluttonmouth = 173,
+
+    // Generated from trait name table entry: Demon's Bite
+    DemonsBite = 174,
+
+    // Generated from trait name table entry: Mouth of Savoring
+    MouthofSavoring = 175,
+
+    // Generated from trait name table entry: Naranari
+    Naranari = 176,
+
+    // Generated from trait name table entry: Hallowed Spirit
+    HallowedSpirit = 177,
+
+    // Generated from trait name table entry: Potent Hypnosis
+    PotentHypnosis = 178,
+
+    // Generated from trait name table entry: Wealth of Lotus
+    WealthOfLotus = 179,
+
+    // Generated from trait name table entry: Internal Hypnosis
+    InternalHypnosis = 180,
+
+    // Generated from trait name table entry: Positive Thoughts
+    PositiveThoughts = 181,
+
+    // Generated from trait name table entry: Draining Mouth
+    DrainingMouth = 182,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE252 = 183,
+
+    // Generated from trait name table entry: Tag Team
+    TagTeam = 184,
+
+    // Generated from trait name table entry: Iron Heart
+    IronHeart = 185,
+
+    // Generated from trait name table entry: Crisis Control
+    CrisisControl = 186,
+
+    // Generated from trait name table entry: Bloodstained Eyes
+    BloodstainedEyes = 187,
+
+    // Generated from trait name table entry: Will of the Sword
+    WillOfTheSword = 188,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE253 = 189,
+
+    // Generated from trait name table entry: Circle of Sadness
+    CircleOfSadness = 190,
+
+    // Generated from trait name table entry: Bolstering Force
+    BolsteringForce = 191,
+
+    // Generated from trait name table entry: God Maker
+    GodMaker = 192,
+
+    // Generated from trait name table entry: Hazy Presence
+    HazyPresence = 193,
+
+    // Generated from trait name table entry: Country Maker
+    CountryMaker = 194,
+
+    // Generated from trait name table entry: Grace of Olive
+    GraceOfOlive = 195,
+
+    // Generated from trait name table entry: Just Die
+    JustDie = 196,
+
+    // Generated from trait name table entry: Bless Spirit
+    BlessSpirit = 197,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE254 = 198,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE255 = 199,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE256 = 200,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE257 = 201,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE258 = 202,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE259 = 203,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE260 = 204,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE261 = 205,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE262 = 206,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE263 = 207,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE264 = 208,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE265 = 209,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE266 = 210,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE267 = 211,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE268 = 212,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE269 = 213,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE270 = 214,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE271 = 215,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE272 = 216,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE273 = 217,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE274 = 218,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE275 = 219,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE276 = 220,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE277 = 221,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE278 = 222,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE279 = 223,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE280 = 224,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE281 = 225,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE282 = 226,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE283 = 227,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE284 = 228,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE285 = 229,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE286 = 230,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE287 = 231,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE288 = 232,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE289 = 233,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE290 = 234,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE291 = 235,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE292 = 236,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE293 = 237,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE294 = 238,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE295 = 239,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE296 = 240,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE297 = 241,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE298 = 242,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE299 = 243,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE300 = 244,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE301 = 245,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE302 = 246,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE303 = 247,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE304 = 248,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE305 = 249,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE306 = 250,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE307 = 251,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE308 = 252,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE309 = 253,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE310 = 254,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE311 = 255,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE312 = 256,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE313 = 257,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE314 = 258,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE315 = 259,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE316 = 260,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE317 = 261,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE318 = 262,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE319 = 263,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE320 = 264,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE321 = 265,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE322 = 266,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE323 = 267,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE324 = 268,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE325 = 269,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE326 = 270,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE327 = 271,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE328 = 272,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE329 = 273,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE330 = 274,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE331 = 275,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE332 = 276,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE333 = 277,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE334 = 278,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE335 = 279,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE336 = 280,
+
+    // Generated from trait name table entry: Ultimate Vessel
+    UltimateVessel_Regent = 281,
+
+    // Generated from trait name table entry: Ultimate Vessel
+    UltimateVessel_QueensNecklace = 282,
+
+    // Generated from trait name table entry: Ultimate Vessel
+    UltimateVessel_StoneOfScone = 283,
+
+    // Generated from trait name table entry: Ultimate Vessel
+    UltimateVessel_KohiNoor = 284,
+
+    // Generated from trait name table entry: Ultimate Vessel
+    UltimateVessel_Orlov = 285,
+
+    // Generated from trait name table entry: Ultimate Vessel
+    UltimateVessel_EmperorsAmulet = 286,
+
+    // Generated from trait name table entry: Ultimate Vessel
+    UltimateVessel_HopeDiamond = 287,
+
+    // Generated from trait name table entry: Ultimate Vessel
+    UltimateVessel_CrystalSkull = 288,
+
+    // Generated from trait name table entry: Ultimate Vessel
+    UltimateVessel_Orichalcum = 289,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE337 = 290,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE338 = 291,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE339 = 292,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE340 = 293,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE341 = 294,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE342 = 295,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE343 = 296,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE344 = 297,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE345 = 298,
+
+    // Generated from trait name table entry: RESERVE
+    RESERVE346 = 299,    
+};
+
+enum TraitEffect : u16 {
+    None,
+    MultiplyCritDmgDealt,
+    MultiplyHealingSpCost,
+    MultiplyAilmentInflictChance,
+    MultiplyHpCost = 5,
+    MultiplySingleTargetDmgDealt_ExceptGun,
+    MultiplyMultiTargetDmgDealt_ExceptGun,
+    MultiplyPhysAtkDmg,
+    MultiplyMaAtkDmg,
+    MultiplySingleTargetDmgDealt_AfterBatonPass,
+    Unknown,
+    MultiplyDmg_After1More,
+    MultiplyDmg_PerEnemyWithAilment,
+    ExplosiveScheme = 26,
+    MultiplyMagicAtkCost = 28,
+    AilmentImmune,
+    ReduceEnemyAccIfAilment,
+    MultiplySpRecovery,
+    MultiplySingleTargetDmgDealt_WhenStrikeWeak,
+    MultiplyElementCost,
+    MultiplyDrainDmgDealt,
+    MultiplyDmgTaken_WhenStrikeWeak,
+    ExtendBuffsCast,
+    MultiplyShockInflictChance_WhenDowned,
+    MultiplyFreezeinflictChance_When1More,
+    MultiplyReflectDmg,
+    MultiplyHpRecovery,
+    MultiplyAilmentInflictChance_AfterBatonPass,
+    MultiplyBurnInflictChance_AfterBatonPass,
+    MultiplyMultiTargetMaDmgDealt,
+    MultiplySingleTargetMaDmgDealt,
+    MultiplySupportCost,
+    MultiplyTechDmgDealt,
+    ExtendBuffsReceived = 49,
+    MultiplyInstaKillInflictChance,
+    CanUseSurroundedSkills_Always,
+    CanUseBadWeatherSkills_Always,
+    AutoConcentrate_OverrideConcentrateMult,
+    CanUseSurroundedSkills_AfterBatonPass,
+    CircleOfSadness = 56,
+    DontConsumeUsedItem_AfterBatonPass,
+    MultiplyDmgDealt_BelowHpThreshold = 60,
+    BeginBattleWithWalls_MultiplySpCost_AfterBatonPass,
+    MultiplyAllyTraitProcChance = 64,
+    MultiplyAilmentInflictChance_WhenEnemyDowned,
+    MultiplyInstaKillInflictChance2,
+    NoInstaKillCost,
+    MultiplyFollowUpChance,
+    MultiplyAtkAndDefByCompendiumCompletion,
+    NoSkillCost_During1More,
+    MultiplyPhysDmg_WholeParty = 90,
+    MultiplyHpRecovery_WholeParty,
+    MultiplyMaAtkCost_WholeParty,
+    MultiplyPhysEvadeChance_WholeParty,
+    MultiplyBurnFreezeShockInflictChance_WholeParty,
+    MultiplyAilmentReceiveChance_WholeParty,
+    MultiplySupportCost_WholeParty,
+    ChanceToAvoidKnockdown_WholeParty,
+    MultiplyHealingCost_WholeParty,
+    MultiplyElementCost_WholeParty,
+};
